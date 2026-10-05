@@ -1,0 +1,116 @@
+{
+  "$defs": {
+    "Confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ],
+      "title": "Confidence",
+      "type": "string"
+    },
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "topic_id": {
+          "maximum": 14,
+          "minimum": 1,
+          "title": "Topic Id",
+          "type": "integer"
+        },
+        "topic_name": {
+          "minLength": 1,
+          "title": "Topic Name",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/Status"
+        },
+        "clause_found": {
+          "default": true,
+          "description": "false only when the NDA has no clause on this topic",
+          "title": "Clause Found",
+          "type": "boolean"
+        },
+        "quote": {
+          "default": "",
+          "description": "verbatim text from the NDA; empty only when clause_found is false",
+          "title": "Quote",
+          "type": "string"
+        },
+        "section_ref": {
+          "default": "",
+          "description": "e.g. 3.2; empty only when clause_found is false",
+          "title": "Section Ref",
+          "type": "string"
+        },
+        "rationale": {
+          "description": "one or two sentences",
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "proposed_language": {
+          "default": "",
+          "description": "playbook fallback wording; empty unless status is fallback",
+          "title": "Proposed Language",
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        }
+      },
+      "required": [
+        "topic_id",
+        "topic_name",
+        "status",
+        "rationale",
+        "confidence"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "Status": {
+      "enum": [
+        "acceptable",
+        "fallback",
+        "escalate",
+        "absent"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "source_file": {
+      "title": "Source File",
+      "type": "string"
+    },
+    "playbook_version": {
+      "default": "",
+      "title": "Playbook Version",
+      "type": "string"
+    },
+    "model": {
+      "default": "",
+      "description": "model id, or 'claude-code' for an in-session review",
+      "title": "Model",
+      "type": "string"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Findings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "source_file",
+    "findings"
+  ],
+  "title": "NDA playbook review",
+  "type": "object",
+  "description": "One finding per playbook topic (1-14). Rules not expressible in JSON Schema are enforced by scripts/schema.py: quote required when clause_found, proposed_language only and always for fallback, low confidence means escalate."
+}
