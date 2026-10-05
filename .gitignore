@@ -1,0 +1,11 @@
+# Never commit real documents. Synthetic NDAs only.
+private/
+outputs/private/
+
+.env
+.env.*
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+~$*
