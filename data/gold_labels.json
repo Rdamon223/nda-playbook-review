@@ -1,0 +1,362 @@
+{
+  "reviewed": false,
+  "playbook_version": "Version 1",
+  "labeler": "DRAFT generated from data/seeded_deviations.json; not yet reviewed by a human",
+  "instructions": "The repo owner reads each NDA, corrects any label below, adds a note for each change, and then sets reviewed to true. eval.py refuses to run until reviewed is true. Topics with no planted deviation default to acceptable, or to the playbook's If absent rule when the clause is missing.",
+  "ndas": {
+    "nda_01.docx": {
+      "company": "Fernhollow Analytics LLC",
+      "counterparty": "Quillbrook Partners Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "fallback",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "fallback",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "7": "Compelled disclosure keeps the 'only the portion required' limit but drops the notice and cooperation duties.",
+        "12": "Governing law is the Counterparty's home state (Ohio, acceptable), but venue is exclusive to the Counterparty's county."
+      }
+    },
+    "nda_02.docx": {
+      "company": "Tamsworth Logistics Corp.",
+      "counterparty": "Brightvale Facility Services LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "escalate",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "fallback",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "fallback"
+      },
+      "notes": {
+        "4": "Obligations for all Confidential Information last in perpetuity, not only for trade secrets.",
+        "8": "Return or destruction clause has no carve-out for backups or legal retention.",
+        "14": "No-license and no-obligation statements present; the 'as is' no warranty statement is missing."
+      }
+    },
+    "nda_03.docx": {
+      "company": "Cobaltine Software Inc.",
+      "counterparty": "Marrowfield Consulting Group LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {}
+    },
+    "nda_04.docx": {
+      "company": "Oakhaven Data Services Inc.",
+      "counterparty": "Pellucid Robotics Corp.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "escalate",
+        "11": "escalate",
+        "12": "acceptable",
+        "13": "fallback",
+        "14": "acceptable"
+      },
+      "notes": {
+        "10": "Mutual 24-month non-solicitation of customers and suppliers.",
+        "11": "Equitable relief is mutual, but only the Counterparty may recover attorneys' fees, from the Company.",
+        "13": "Assignment is barred in every case, including a merger or change of control."
+      }
+    },
+    "nda_05.docx": {
+      "company": "Sablewood Capital Advisors LLC",
+      "counterparty": "Thistlecrest Property Management Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "escalate",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "5": "Hard case (buried in definitions): the defined Purpose adds each party's development and improvement of its own products and services. The use clause itself reads 'solely for the Purpose'."
+      }
+    },
+    "nda_06.docx": {
+      "company": "Veridune Energy Solutions LLC",
+      "counterparty": "Wexmoor Staffing Partners Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "escalate",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "absent",
+        "14": "acceptable"
+      },
+      "notes": {
+        "9": "Broad residuals clause: any retained information, intentionally memorized or not, usable for any purpose with no royalty.",
+        "13": "Assignment clause removed (absence is acceptable under the playbook; not counted as a planted deviation)."
+      }
+    },
+    "nda_07.docx": {
+      "company": "Lanternfield Media LLC",
+      "counterparty": "Halcyra Biologics Inc.",
+      "labels": {
+        "1": "escalate",
+        "2": "escalate",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "escalate",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "escalate",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "1": "Labeled mutual, but the obligation clause binds only the Company.",
+        "2": "Oral and visual disclosures are protected only if summarized in writing within five days.",
+        "7": "Compelled disclosure clause removed entirely.",
+        "12": "Delaware law, but disputes go to binding arbitration."
+      }
+    },
+    "nda_08.docx": {
+      "company": "Juniperline Retail Group Inc.",
+      "counterparty": "Kestrelford Insurance Services LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "acceptable",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {}
+    },
+    "nda_09.docx": {
+      "company": "Northbask Manufacturing Co.",
+      "counterparty": "Glimmerton Labs Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "fallback",
+        "4": "acceptable",
+        "5": "escalate",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "5": "Use clause also allows training and improving machine learning models.",
+        "3": "Exclusions list omits the independent development exclusion."
+      }
+    },
+    "nda_10.docx": {
+      "company": "Duskwater Transit LLC",
+      "counterparty": "Ironpeak Construction Services LLC",
+      "labels": {
+        "1": "escalate",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "1": "Hard case (defined-term trap): titled mutual and the obligation clause reads neutrally, but the definitions fix the Counterparty as the only Disclosing Party and the Company as the only Receiving Party, so only the Company's obligations exist.",
+        "11": "Remedies clause is written 'each party', so it stays acceptable; the one-way effect is captured under topic 1."
+      }
+    },
+    "nda_11.docx": {
+      "company": "Ashgrove Clinical Partners LLC",
+      "counterparty": "Copperlane Payroll Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "fallback",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "fallback",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "acceptable",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "2": "Definition requires marking, with no reasonable-person standard.",
+        "6": "Representatives limited to employees; affiliates, contractors, and professional advisors left out."
+      }
+    },
+    "nda_12.docx": {
+      "company": "Rookhaven Hospitality Group LLC",
+      "counterparty": "Saltmeadow Linen Supply Inc.",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {}
+    },
+    "nda_13.docx": {
+      "company": "Mistral Point Engineering Inc.",
+      "counterparty": "Larkspur Survey Group LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "fallback",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "acceptable",
+        "10": "absent",
+        "11": "fallback",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "4": "Survival is eighteen months (between one and two years) with no trade-secret carve-out.",
+        "11": "Equitable relief runs in one direction only (the Counterparty's information); fees are not shifted."
+      }
+    },
+    "nda_14.docx": {
+      "company": "Briarstone Health Systems Inc.",
+      "counterparty": "Cindervale IT Partners LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "escalate",
+        "5": "acceptable",
+        "6": "acceptable",
+        "7": "acceptable",
+        "8": "acceptable",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "acceptable"
+      },
+      "notes": {
+        "4": "Hard case (ambiguous): no fixed term and no termination right; obligations survive 'for such period as is reasonable', so the duration cannot be determined."
+      }
+    },
+    "nda_15.docx": {
+      "company": "Hollisford Water Technologies Inc.",
+      "counterparty": "Emberly Field Services LLC",
+      "labels": {
+        "1": "acceptable",
+        "2": "acceptable",
+        "3": "acceptable",
+        "4": "acceptable",
+        "5": "acceptable",
+        "6": "escalate",
+        "7": "acceptable",
+        "8": "escalate",
+        "9": "absent",
+        "10": "absent",
+        "11": "acceptable",
+        "12": "acceptable",
+        "13": "acceptable",
+        "14": "escalate"
+      },
+      "notes": {
+        "8": "Destruction within five business days, certified by an officer under penalty of perjury.",
+        "6": "Each Representative must sign a joinder before receiving information.",
+        "14": "Feedback and improvements are assigned to the party that receives them."
+      }
+    }
+  }
+}

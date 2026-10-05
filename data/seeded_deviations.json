@@ -1,0 +1,365 @@
+{
+  "generated_by": "scripts/make_synthetic.py",
+  "note": "All parties, cities, and projects are fictional. 'company' is the party using the playbook. Deviations with counted=false are not planted problems (for example, an omitted clause whose absence the playbook accepts).",
+  "ndas": [
+    {
+      "file": "nda_01.docx",
+      "kind": "deviation",
+      "style": "section",
+      "company": "Fernhollow Analytics LLC",
+      "counterparty": "Quillbrook Partners Inc.",
+      "deviations": [
+        {
+          "topic_id": 7,
+          "topic_name": "Compelled disclosure",
+          "expected_status": "fallback",
+          "planted": "Compelled disclosure keeps the 'only the portion required' limit but drops the notice and cooperation duties.",
+          "where": "section 6",
+          "counted": true
+        },
+        {
+          "topic_id": 12,
+          "topic_name": "Governing law and venue",
+          "expected_status": "fallback",
+          "planted": "Governing law is the Counterparty's home state (Ohio, acceptable), but venue is exclusive to the Counterparty's county.",
+          "where": "section 12",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_02.docx",
+      "kind": "deviation",
+      "style": "dotted",
+      "company": "Tamsworth Logistics Corp.",
+      "counterparty": "Brightvale Facility Services LLC",
+      "deviations": [
+        {
+          "topic_id": 4,
+          "topic_name": "Term of the agreement and survival of obligations",
+          "expected_status": "escalate",
+          "planted": "Obligations for all Confidential Information last in perpetuity, not only for trade secrets.",
+          "where": "section 8",
+          "counted": true
+        },
+        {
+          "topic_id": 8,
+          "topic_name": "Return or destruction of materials",
+          "expected_status": "fallback",
+          "planted": "Return or destruction clause has no carve-out for backups or legal retention.",
+          "where": "section 7",
+          "counted": true
+        },
+        {
+          "topic_id": 14,
+          "topic_name": "No license, no warranty, no obligation to proceed",
+          "expected_status": "fallback",
+          "planted": "No-license and no-obligation statements present; the 'as is' no warranty statement is missing.",
+          "where": "section 10",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_03.docx",
+      "kind": "clean",
+      "style": "runin",
+      "company": "Cobaltine Software Inc.",
+      "counterparty": "Marrowfield Consulting Group LLC",
+      "deviations": [],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_04.docx",
+      "kind": "deviation",
+      "style": "section",
+      "company": "Oakhaven Data Services Inc.",
+      "counterparty": "Pellucid Robotics Corp.",
+      "deviations": [
+        {
+          "topic_id": 10,
+          "topic_name": "Non-solicitation or non-compete language",
+          "expected_status": "escalate",
+          "planted": "Mutual 24-month non-solicitation of customers and suppliers.",
+          "where": "section 9",
+          "counted": true
+        },
+        {
+          "topic_id": 11,
+          "topic_name": "Remedies and injunctive relief",
+          "expected_status": "escalate",
+          "planted": "Equitable relief is mutual, but only the Counterparty may recover attorneys' fees, from the Company.",
+          "where": "section 11",
+          "counted": true
+        },
+        {
+          "topic_id": 13,
+          "topic_name": "Assignment and change of control",
+          "expected_status": "fallback",
+          "planted": "Assignment is barred in every case, including a merger or change of control.",
+          "where": "section 12",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_05.docx",
+      "kind": "hard",
+      "style": "dotted",
+      "company": "Sablewood Capital Advisors LLC",
+      "counterparty": "Thistlecrest Property Management Inc.",
+      "deviations": [
+        {
+          "topic_id": 5,
+          "topic_name": "Permitted use (purpose limitation)",
+          "expected_status": "escalate",
+          "planted": "Hard case (buried in definitions): the defined Purpose adds each party's development and improvement of its own products and services. The use clause itself reads 'solely for the Purpose'.",
+          "where": "section 1.2",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_06.docx",
+      "kind": "deviation",
+      "style": "runin",
+      "company": "Veridune Energy Solutions LLC",
+      "counterparty": "Wexmoor Staffing Partners Inc.",
+      "deviations": [
+        {
+          "topic_id": 9,
+          "topic_name": "Residuals clause",
+          "expected_status": "escalate",
+          "planted": "Broad residuals clause: any retained information, intentionally memorized or not, usable for any purpose with no royalty.",
+          "where": "section 9",
+          "counted": true
+        },
+        {
+          "topic_id": 13,
+          "topic_name": "Assignment and change of control",
+          "expected_status": "absent",
+          "planted": "Assignment clause removed (absence is acceptable under the playbook; not counted as a planted deviation).",
+          "where": "clause removed",
+          "counted": false
+        }
+      ],
+      "omitted_topics": [
+        13
+      ]
+    },
+    {
+      "file": "nda_07.docx",
+      "kind": "deviation",
+      "style": "section",
+      "company": "Lanternfield Media LLC",
+      "counterparty": "Halcyra Biologics Inc.",
+      "deviations": [
+        {
+          "topic_id": 1,
+          "topic_name": "Mutuality",
+          "expected_status": "escalate",
+          "planted": "Labeled mutual, but the obligation clause binds only the Company.",
+          "where": "section 2",
+          "counted": true
+        },
+        {
+          "topic_id": 2,
+          "topic_name": "Definition of Confidential Information",
+          "expected_status": "escalate",
+          "planted": "Oral and visual disclosures are protected only if summarized in writing within five days.",
+          "where": "section 1(a)",
+          "counted": true
+        },
+        {
+          "topic_id": 7,
+          "topic_name": "Compelled disclosure",
+          "expected_status": "escalate",
+          "planted": "Compelled disclosure clause removed entirely.",
+          "where": "clause removed",
+          "counted": true
+        },
+        {
+          "topic_id": 12,
+          "topic_name": "Governing law and venue",
+          "expected_status": "escalate",
+          "planted": "Delaware law, but disputes go to binding arbitration.",
+          "where": "section 11",
+          "counted": true
+        }
+      ],
+      "omitted_topics": [
+        7
+      ]
+    },
+    {
+      "file": "nda_08.docx",
+      "kind": "clean",
+      "style": "dotted",
+      "company": "Juniperline Retail Group Inc.",
+      "counterparty": "Kestrelford Insurance Services LLC",
+      "deviations": [],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_09.docx",
+      "kind": "deviation",
+      "style": "runin",
+      "company": "Northbask Manufacturing Co.",
+      "counterparty": "Glimmerton Labs Inc.",
+      "deviations": [
+        {
+          "topic_id": 5,
+          "topic_name": "Permitted use (purpose limitation)",
+          "expected_status": "escalate",
+          "planted": "Use clause also allows training and improving machine learning models.",
+          "where": "section 4",
+          "counted": true
+        },
+        {
+          "topic_id": 3,
+          "topic_name": "Standard exclusions",
+          "expected_status": "fallback",
+          "planted": "Exclusions list omits the independent development exclusion.",
+          "where": "section 3",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_10.docx",
+      "kind": "hard",
+      "style": "section",
+      "company": "Duskwater Transit LLC",
+      "counterparty": "Ironpeak Construction Services LLC",
+      "deviations": [
+        {
+          "topic_id": 1,
+          "topic_name": "Mutuality",
+          "expected_status": "escalate",
+          "planted": "Hard case (defined-term trap): titled mutual and the obligation clause reads neutrally, but the definitions fix the Counterparty as the only Disclosing Party and the Company as the only Receiving Party, so only the Company's obligations exist.",
+          "where": "section 2 (definitions in section 1(c), section 1(d))",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_11.docx",
+      "kind": "deviation",
+      "style": "dotted",
+      "company": "Ashgrove Clinical Partners LLC",
+      "counterparty": "Copperlane Payroll Inc.",
+      "deviations": [
+        {
+          "topic_id": 2,
+          "topic_name": "Definition of Confidential Information",
+          "expected_status": "fallback",
+          "planted": "Definition requires marking, with no reasonable-person standard.",
+          "where": "section 1.1",
+          "counted": true
+        },
+        {
+          "topic_id": 6,
+          "topic_name": "Permitted disclosure to representatives",
+          "expected_status": "fallback",
+          "planted": "Representatives limited to employees; affiliates, contractors, and professional advisors left out.",
+          "where": "section 4",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_12.docx",
+      "kind": "clean",
+      "style": "runin",
+      "company": "Rookhaven Hospitality Group LLC",
+      "counterparty": "Saltmeadow Linen Supply Inc.",
+      "deviations": [],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_13.docx",
+      "kind": "deviation",
+      "style": "section",
+      "company": "Mistral Point Engineering Inc.",
+      "counterparty": "Larkspur Survey Group LLC",
+      "deviations": [
+        {
+          "topic_id": 4,
+          "topic_name": "Term of the agreement and survival of obligations",
+          "expected_status": "fallback",
+          "planted": "Survival is eighteen months (between one and two years) with no trade-secret carve-out.",
+          "where": "section 7",
+          "counted": true
+        },
+        {
+          "topic_id": 11,
+          "topic_name": "Remedies and injunctive relief",
+          "expected_status": "fallback",
+          "planted": "Equitable relief runs in one direction only (the Counterparty's information); fees are not shifted.",
+          "where": "section 11",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_14.docx",
+      "kind": "hard",
+      "style": "dotted",
+      "company": "Briarstone Health Systems Inc.",
+      "counterparty": "Cindervale IT Partners LLC",
+      "deviations": [
+        {
+          "topic_id": 4,
+          "topic_name": "Term of the agreement and survival of obligations",
+          "expected_status": "escalate",
+          "planted": "Hard case (ambiguous): no fixed term and no termination right; obligations survive 'for such period as is reasonable', so the duration cannot be determined.",
+          "where": "section 8",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    },
+    {
+      "file": "nda_15.docx",
+      "kind": "deviation",
+      "style": "runin",
+      "company": "Hollisford Water Technologies Inc.",
+      "counterparty": "Emberly Field Services LLC",
+      "deviations": [
+        {
+          "topic_id": 8,
+          "topic_name": "Return or destruction of materials",
+          "expected_status": "escalate",
+          "planted": "Destruction within five business days, certified by an officer under penalty of perjury.",
+          "where": "section 7",
+          "counted": true
+        },
+        {
+          "topic_id": 6,
+          "topic_name": "Permitted disclosure to representatives",
+          "expected_status": "escalate",
+          "planted": "Each Representative must sign a joinder before receiving information.",
+          "where": "section 5",
+          "counted": true
+        },
+        {
+          "topic_id": 14,
+          "topic_name": "No license, no warranty, no obligation to proceed",
+          "expected_status": "escalate",
+          "planted": "Feedback and improvements are assigned to the party that receives them.",
+          "where": "section 12",
+          "counted": true
+        }
+      ],
+      "omitted_topics": []
+    }
+  ]
+}

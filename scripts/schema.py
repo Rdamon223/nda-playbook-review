@@ -82,6 +82,7 @@ class Review(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     source_file: str
+    company: str = Field("", description="the party the review is done for (the playbook's \"Company\")")
     playbook_version: str = ""
     model: str = Field("", description="model id, or 'claude-code' for an in-session review")
     findings: list[Finding]

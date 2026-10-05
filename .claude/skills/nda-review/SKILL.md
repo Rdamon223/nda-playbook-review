@@ -12,6 +12,10 @@ Read `playbook.md` in full before you start, including the general rules and the
 
 ## Workflow (follow every step, in order)
 
+0. **Know who you act for.** The playbook speaks for "the Company". Confirm which party in the NDA is
+   the Company before you start. If the user has not said, ask. Record it in `company`. One-sided
+   terms are judged by whether they burden the Company.
+
 1. **Extract.** Run `python scripts/extract_text.py <file>` to get numbered text. Each line is
    `[ref] text`, where ref is the section the paragraph belongs to. Work from this text only.
 
@@ -53,6 +57,7 @@ Read `playbook.md` in full before you start, including the general rules and the
 ```json
 {
   "source_file": "data/synthetic_ndas/nda_01.docx",
+  "company": "Fernhollow Analytics LLC",
   "playbook_version": "Version 1",
   "model": "claude-code",
   "findings": [

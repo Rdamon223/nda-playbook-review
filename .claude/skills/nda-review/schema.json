@@ -87,6 +87,12 @@
       "title": "Source File",
       "type": "string"
     },
+    "company": {
+      "default": "",
+      "description": "the party the review is done for (the playbook's \"Company\")",
+      "title": "Company",
+      "type": "string"
+    },
     "playbook_version": {
       "default": "",
       "title": "Playbook Version",

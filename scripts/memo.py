@@ -37,6 +37,8 @@ def render(review: dict, topics: dict, *, today: date | None = None) -> str:
     meta = [f"Reviewed {today.isoformat()} against the mutual NDA playbook"]
     if review.get("playbook_version"):
         meta[0] += f" ({review['playbook_version']})"
+    if review.get("company"):
+        meta[0] += f" for {review['company']}"
     if review.get("model"):
         meta.append(f"model `{review['model']}`")
     out += [", ".join(meta) + ".", ""]

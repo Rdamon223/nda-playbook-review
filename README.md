@@ -10,7 +10,8 @@ Work in progress, following `nda-review-skill-spec.md` section 12.
 
 - Step 1 (done): playbook in `playbooks/mutual-nda-playbook.md`, Version 1, approved by the owner.
 - Step 2 (done): the skill (`.claude/skills/nda-review/`), schema, extraction, quote verification, memo rendering, and tests.
-- Next: 15 synthetic NDAs, the seeded-deviation manifest, and draft gold labels for owner review.
+- Step 3 (in review): 15 synthetic NDAs, the seeded-deviation manifest, and draft gold labels. Waiting for the owner to review the gold labels and record manual review times.
+- Next: the evaluation harness (`scripts/eval.py`) and `scripts/review.py`.
 
 ## Layout so far
 
@@ -25,11 +26,22 @@ Work in progress, following `nda-review-skill-spec.md` section 12.
 | `scripts/finalize.py` | Validates a review JSON (schema, playbook, quotes) and writes the memo |
 | `scripts/memo.py` | Renders the one-page memo: summary table, escalations first, lawyer-review footer |
 | `scripts/playbook.py` | Parses the playbook markdown into topics |
+| `scripts/make_synthetic.py` | Builds the 15 synthetic NDAs, `data/seeded_deviations.json`, draft `data/gold_labels.json`, and `data/manual_timing.csv` |
 
 Run the tests with `pip install -r requirements.txt` then `python -m pytest`.
 
 ## Data
 
-All NDAs in this repo are synthetic, with fictional party names. No client or employer document is ever placed here. `private/` and `outputs/private/` are git-ignored.
+All NDAs in this repo are synthetic, with invented party names, cities, and projects. No client or employer document is ever placed here. `private/` and `outputs/private/` are git-ignored.
+
+The test set (`data/synthetic_ndas/`) has 15 mutual NDAs of 3 to 4 pages in three drafting styles:
+
+- 3 clean NDAs.
+- 9 NDAs with 1 to 4 planted deviations each (22 in total).
+- 3 hard cases: a deviation buried in a definition, a defined-term trap that makes a "mutual" agreement one-way, and a clause too ambiguous to classify without a lawyer.
+
+`data/seeded_deviations.json` records each planted deviation: the topic, what was planted, and the section.
+
+**Gold labels** (`data/gold_labels.json`) give the expected status for each of the 14 topics in each NDA. They are single-reviewer labels, assigned by one human with transactional legal experience: a non-attorney with more than 2,500 negotiated transactions, most handled with attorney oversight and joint strategy. The first draft was generated from the manifest. The evaluation will not run until the labeler has reviewed every NDA and set `"reviewed": true`.
 
 Full quick start, evaluation method, and results will be added as the build progresses.
