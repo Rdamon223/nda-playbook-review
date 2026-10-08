@@ -1,0 +1,79 @@
+{
+  "file": "nda_15.docx",
+  "company": "Hollisford Water Technologies Inc.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Hollisford Water Technologies Inc.\n\nI've ordered the issues by importance. Some of them cut both ways because the NDA is mutual, so I've noted where Hollisford is more likely to be the discloser or the recipient. I don't know that from the document, so please confirm it.\n\n## Significant issues\n\n**1. Joinder requirement for Representatives (§5)**\nEach Representative must sign a joinder \"in a form approved by the Disclosing Party\" before receiving anything. This is unusually burdensome. It would cover every employee, officer, director and advisor, and outside counsel and auditors will often refuse to sign. It also gives the counterparty an approval right over the form, which could stall internal circulation. *Fix:* require only that Representatives be informed of the confidentiality obligations and be bound by duties at least as protective (professional or written duties are enough). Keep Hollisford's responsibility for their breaches.\n\n**2. Feedback assignment buried in \"No License\" (§12)**\nFeedback, suggestions and improvements about the other party's products or services are \"hereby assigned.\" This is a present assignment of IP, not a confidentiality term. Emberly could take ownership of Hollisford's suggestions on its own services. Hollisford's product improvements could pass to Emberly, which matters because Hollisford is a technology company. It also contradicts the \"no license\" statement in the same sentence. *Fix:* delete it, or replace it with a non-exclusive license, with no assignment and no obligation to give feedback.\n\n**3. Affiliates as Representatives, with no control over them (§5, §11)**\nRepresentatives include affiliates' personnel, and either party may assign the Agreement to an affiliate without consent. Emberly could therefore move the Agreement, and Hollisford's information, to an unknown affiliate. A successor could also be a Hollisford competitor, and notice is given only after the fact. *Fix:* require consent for assignment, or at least bar assignment to a competitor of the other party. Give the non-assigning party a termination right.\n\n**4. Trade secret protection is weak at the margins (§8)**\n- The Agreement covers only information disclosed in the two years after the Effective Date, and obligations last three years after expiration or termination. Non-trade-secret information, such as pricing, technical specifications and customer data, becomes unprotected after that period.\n- Either party can terminate on 30 days' notice. A discloser's information then stays protected for only three years.\n- Trade secret survival is good but depends on the information qualifying as a trade secret. Reasonable secrecy measures are an element of that status. A lapse in contractual protection could be used to argue that Hollisford failed to take them.\n\n*Fix:* extend survival to five years for general confidential information. Consider a longer term for source code, algorithms, system designs and similar technical data, and for personal or regulated data, which should be protected for as long as it is held.\n\n**4a. Water infrastructure security.** Pump station monitoring information (SCADA, network architecture, vulnerabilities, site layouts) may be critical infrastructure information. Consider a specific category with indefinite protection, security-handling requirements, and incident notification. Confirm whether any customer or utility contracts impose flow-down obligations on Hollisford.\n\n## Moderate issues\n\n**5. Return/destruction mechanics (§7)**\n- Five business days is tight for a company with distributed systems, and an officer certification \"under penalty of perjury\" is excessive. A plain written certification is normal.\n- There is no carve-out for retention required by law, regulation or bona fide internal compliance policies. There is also no exception for archival copies held by legal or compliance. The backup exception is good, but it should be broadened to those cases.\n- There is no equivalent right for Hollisford to keep a single archival copy for dispute purposes.\n\n*Fix:* extend the deadline to 15-30 days, use a standard certification, and add the retention carve-outs.\n\n**6. Exclusions require \"written records\" (§3)**\nThe Receiving Party must demonstrate each exclusion by written records. That is hard to meet, especially for exclusions (a) and (d), where the fact is public or a third party supplied the information. Hollisford will probably be a recipient too, so this burden hurts it. *Fix:* limit the documentation requirement to exclusions (b) and (c), where it is reasonable.\n\n**7. Definition of Confidential Information (§2)**\n- It is limited to \"business, technical, and financial\" information. It omits customer, personnel and operational data, and it does not clearly cover the existence and terms of the discussions.\n- The \"marked or reasonable person\" standard is fine, but it should expressly cover information of third parties that the discloser holds (such as utility customers) and information observed during site visits or system access.\n- It does not say what happens to the party's own analyses, notes or compilations derived from Confidential Information. Those derivatives are not clearly covered.\n\n**8. Remedies (§9)**\n- The clause says each side bears its own attorneys' fees. Hollisford may want prevailing-party fees as a deterrent against misuse of its information.\n- \"Without the necessity of proving actual damages\" is acceptable, but a bond waiver is not included. Add that no bond is required, or only a minimal one.\n- Nothing addresses liability for a breach by an affiliate or Representative beyond §5.\n\n**9. Compelled disclosure (§6)**\n- The Disclosing Party controls the process and the Receiving Party must cooperate at the Disclosing Party's expense. That is a fair allocation.\n- It does not address routine regulatory examinations that do not target the discloser. If Hollisford is regulated or audited, it needs an exception to the notice requirement for those cases.\n\n**10. Venue (§10)**\nOhio law and Cuyahoga County courts favor Hollisford, so this is good for Hollisford and Emberly may push back. It is exclusive, which could hamper Hollisford if it needs to enforce quickly against Emberly in Kentucky. The injunction is available in Ohio, but enforcement against assets or conduct in Kentucky needs a second step. Consider making venue non-exclusive for injunctive relief.\n\n## Drafting and housekeeping\n\n**11. Missing definitions and cross-references.**\n- \"Purpose\" is defined inside §4 but used in §1 before that. Move the definition to the beginning.\n- The Preamble says the parties are \"talking about\" pump station monitoring services. That is informal and does not match §4's definition. Conform it.\n- \"Representatives\" is used in §3 before §5 defines it.\n\n**12. Entire agreement (§14).**\nThe Agreement supersedes prior discussions on the same subject matter. Hollisford and Emberly may already have exchanged information in earlier talks. Those disclosures would lose protection unless the Agreement expressly covers them. *Fix:* cover information disclosed before the Effective Date in connection with the Purpose. Also, §8 says the Agreement covers only information disclosed during the two years after the Effective Date, so earlier disclosures are excluded.\n\n**13. No data protection or security provisions.**\nThere is no obligation to apply reasonable security measures, no standard of care (for example, at least the care it uses for its own confidential information, and no less than reasonable care), and no notice of unauthorized use or disclosure. Add all three.\n\n**14. No non-solicitation, no residuals clause.**\nNeither is necessarily a problem. Hollisford should not accept a residuals clause if one is proposed, because it would let Emberly use retained knowledge of Hollisford's technology.\n\n**15. Signature block.**\nNames, titles and dates are blank, as expected. The \"Notice address\" lines give only a city. Notice by hand or courier needs a full street address, and email notice needs an email address. The Effective Date (August 24, 2026) should also be confirmed against the actual signing date.\n\n**16. No securities, export or privileged-information language.**\nIf Hollisford is publicly traded or the information could be export-controlled, add provisions on those points. Also consider a clause that disclosure of privileged material does not waive privilege.\n\n**17. Relationship clause (§17).**\n\"Independent contractors\" is the wrong framing for an NDA between prospective counterparties. It is harmless but could be reworded, for example \"independent parties.\"\n\n## Suggested priorities\n\n1. Delete the feedback assignment (§12).\n2. Replace the joinder requirement (§5).\n3. Tighten assignment (§11) and extend the protection term (§8).\n4. Fix return and destruction (§7), the written-records standard (§3), and the coverage of earlier disclosures (§14/§8).\n5. Add security and breach-notice obligations.\n\nI can prepare a redline with replacement language if you'd like. It would help to know which direction the information will mostly flow, and whether any customer contracts restrict what Hollisford can share.",
+  "seconds": 25.0,
+  "usage": {
+    "input_tokens": 2489,
+    "output_tokens": 2913,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "review notes the NDA is mutual and only says which direction information flows should be confirmed"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Definition of Confidential Information (§2) ... omits customer, personnel and operational data"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Exclusions require \"written records\" ... limit the documentation requirement to exclusions (b) and (c)"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Trade secret protection is weak at the margins (§8) ... extend survival to five years"
+    },
+    "5": {
+      "label": "not_flagged",
+      "evidence": "only a housekeeping note that \"Purpose\" is defined late in §4"
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Joinder requirement for Representatives (§5) ... unusually burdensome"
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "Compelled disclosure (§6) ... fair allocation; needs exception for routine regulatory examinations"
+    },
+    "8": {
+      "label": "minor",
+      "evidence": "Return/destruction mechanics (§7) ... extend the deadline to 15-30 days"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "Hollisford should not accept a residuals clause if one is proposed (no residuals clause in the NDA)"
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": "No non-solicitation ... Neither is necessarily a problem"
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "Remedies (§9) ... prevailing-party fees, bond waiver"
+    },
+    "12": {
+      "label": "minor",
+      "evidence": "Venue (§10) ... Consider making venue non-exclusive for injunctive relief"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Affiliates as Representatives ... require consent for assignment, or at least bar assignment to a competitor"
+    },
+    "14": {
+      "label": "serious",
+      "evidence": "Feedback assignment buried in \"No License\" (§12) ... delete it"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3387,
+    "output_tokens": 687,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

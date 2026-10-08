@@ -1,0 +1,1694 @@
+{
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "playbook_version": "Version 1",
+  "ndas": 15,
+  "skill_runs_per_nda": 3,
+  "missing_runs": [],
+  "skill": {
+    "decisions": 630,
+    "accuracy": 0.9714,
+    "accuracy_absent_as_acceptable": 0.9746,
+    "escalation_recall": 1.0,
+    "escalations_gold": 45,
+    "escalations_caught": 45,
+    "false_escalation_rate": 0.0126,
+    "acceptable_gold": 477,
+    "false_escalations": 6,
+    "per_topic_accuracy": {
+      "1": 0.9333,
+      "2": 0.9333,
+      "3": 1.0,
+      "4": 1.0,
+      "5": 1.0,
+      "6": 0.9556,
+      "7": 1.0,
+      "8": 1.0,
+      "9": 0.9556,
+      "10": 1.0,
+      "11": 0.9556,
+      "12": 0.8667,
+      "13": 1.0,
+      "14": 1.0
+    },
+    "confusion": {
+      "acceptable": {
+        "acceptable": 465,
+        "absent": 2,
+        "fallback": 4,
+        "escalate": 6
+      },
+      "fallback": {
+        "fallback": 24,
+        "acceptable": 2,
+        "escalate": 4
+      },
+      "escalate": {
+        "escalate": 45
+      },
+      "absent": {
+        "absent": 78
+      }
+    },
+    "misses": [
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "fallback",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 3,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "fallback",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 2,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "acceptable",
+        "predicted": "absent"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 3,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "acceptable",
+        "predicted": "absent"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 2,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 2,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 3,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 3,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 2,
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 3,
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 3,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 3,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 2,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      }
+    ],
+    "invalid_reviews": 0,
+    "reviews_needing_repair": 0,
+    "first_drafts_with_quote_or_wording_problem": 0,
+    "quotes": {
+      "quotes": 547,
+      "verbatim": 547,
+      "in_cited_section": 547,
+      "quote_validity": 1.0,
+      "proposed": 28,
+      "proposed_from_playbook": 28,
+      "hallucinations": 0
+    },
+    "turnaround": {
+      "reviews": 45,
+      "mean_seconds": 15.2,
+      "max_seconds": 28.7,
+      "mean_input_tokens": 12440,
+      "mean_output_tokens": 2954,
+      "mean_cost_usd": 0.036,
+      "total_cost_usd": 1.6179
+    },
+    "consistency": {
+      "topic_decisions": 210,
+      "changed": 7,
+      "changed_rate": 0.0333,
+      "details": [
+        {
+          "file": "nda_01.docx",
+          "topic_id": 12,
+          "statuses": [
+            "acceptable",
+            "fallback",
+            "acceptable"
+          ]
+        },
+        {
+          "file": "nda_08.docx",
+          "topic_id": 9,
+          "statuses": [
+            "acceptable",
+            "absent",
+            "absent"
+          ]
+        },
+        {
+          "file": "nda_09.docx",
+          "topic_id": 12,
+          "statuses": [
+            "acceptable",
+            "fallback",
+            "acceptable"
+          ]
+        },
+        {
+          "file": "nda_11.docx",
+          "topic_id": 6,
+          "statuses": [
+            "escalate",
+            "fallback",
+            "escalate"
+          ]
+        },
+        {
+          "file": "nda_13.docx",
+          "topic_id": 11,
+          "statuses": [
+            "escalate",
+            "fallback",
+            "escalate"
+          ]
+        },
+        {
+          "file": "nda_13.docx",
+          "topic_id": 12,
+          "statuses": [
+            "acceptable",
+            "acceptable",
+            "fallback"
+          ]
+        },
+        {
+          "file": "nda_14.docx",
+          "topic_id": 12,
+          "statuses": [
+            "fallback",
+            "fallback",
+            "acceptable"
+          ]
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "decisions": 210,
+    "accuracy": 0.2476,
+    "accuracy_absent_as_acceptable": 0.3238,
+    "escalation_recall": 0.9333,
+    "escalations_gold": 15,
+    "escalations_caught": 14,
+    "false_escalation_rate": 0.283,
+    "acceptable_gold": 159,
+    "false_escalations": 45,
+    "per_topic_accuracy": {
+      "1": 0.8667,
+      "2": 0.0667,
+      "3": 0.0667,
+      "4": 0.1333,
+      "5": 0.6,
+      "6": 0.0667,
+      "7": 0.2,
+      "8": 0.0667,
+      "9": 0.2667,
+      "10": 0.4,
+      "11": 0.0667,
+      "12": 0.2,
+      "13": 0.0667,
+      "14": 0.4
+    },
+    "confusion": {
+      "acceptable": {
+        "acceptable": 30,
+        "fallback": 83,
+        "escalate": 45,
+        "absent": 1
+      },
+      "fallback": {
+        "escalate": 8,
+        "fallback": 2
+      },
+      "escalate": {
+        "escalate": 14,
+        "fallback": 1
+      },
+      "absent": {
+        "acceptable": 15,
+        "absent": 6,
+        "fallback": 5
+      }
+    },
+    "misses": [
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_01.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "absent"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_02.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_03.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_04.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_05.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_06.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_07.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_08.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_09.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_10.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_11.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_12.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "fallback",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_13.docx",
+        "run": 1,
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_14.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "gold": "escalate",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "gold": "absent",
+        "predicted": "acceptable"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "gold": "acceptable",
+        "predicted": "fallback"
+      },
+      {
+        "file": "nda_15.docx",
+        "run": 1,
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "gold": "acceptable",
+        "predicted": "escalate"
+      }
+    ],
+    "ungraded": 0,
+    "quoted_passages": 96,
+    "quoted_passages_verbatim": 46,
+    "turnaround": {
+      "reviews": 15,
+      "mean_seconds": 23.2,
+      "max_seconds": 30.1,
+      "mean_input_tokens": 5993,
+      "mean_output_tokens": 3452,
+      "mean_cost_usd": 0.0465,
+      "total_cost_usd": 0.6975
+    }
+  },
+  "human": [
+    {
+      "file": "nda_01.docx",
+      "manual": 2.0,
+      "ai": null
+    },
+    {
+      "file": "nda_02.docx",
+      "manual": 2.0,
+      "ai": null
+    },
+    {
+      "file": "nda_03.docx",
+      "manual": 2.0,
+      "ai": null
+    },
+    {
+      "file": "nda_04.docx",
+      "manual": 2.0,
+      "ai": null
+    },
+    {
+      "file": "nda_05.docx",
+      "manual": 2.0,
+      "ai": null
+    },
+    {
+      "file": "nda_06.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_07.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_08.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_09.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_10.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_11.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_12.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_13.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_14.docx",
+      "manual": null,
+      "ai": null
+    },
+    {
+      "file": "nda_15.docx",
+      "manual": null,
+      "ai": null
+    }
+  ]
+}

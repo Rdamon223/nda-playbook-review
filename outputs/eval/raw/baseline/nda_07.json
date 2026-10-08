@@ -1,0 +1,79 @@
+{
+  "file": "nda_07.docx",
+  "company": "Lanternfield Media LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Lanternfield Media LLC\n\nThe agreement is titled mutual, but several provisions are one-sided or defective. I've ordered the issues by priority.\n\n## Critical\n\n**1. Section 2: Only Lanternfield has a confidentiality obligation.**\nThe last sentence says only that \"Lanternfield shall hold all Confidential Information disclosed by Halcyra in strict confidence.\" Halcyra has no equivalent covenant. Section 4 (use restriction), Section 5 (disclosure limits), and Section 7 (return) do bind the \"Receiving Party,\" so Halcyra has some obligations. But the express non-disclosure covenant runs one way, and Halcyra could argue its own duty is narrower. It also leaves Lanternfield with a stricter \"strict confidence\" standard that Halcyra does not share.\n*Fix:* Replace the sentence with \"Each Receiving Party shall hold the Disclosing Party's Confidential Information in confidence, using at least reasonable care, and shall not disclose it except as permitted by this Agreement.\"\n\n**2. Section 1(a): The oral and visual disclosure rule.**\nOral or visual information counts only if it is summarized in writing, marked confidential, and delivered within 5 days. This conflicts with the \"reasonable person\" standard in the same sentence. Creative and marketing discussions are largely oral and visual (pitches, concepts, mockups, meetings), so Lanternfield's ideas could lose protection if someone misses a 5-day deadline. The clause is mutual on its face, but Lanternfield is the party likely to be disclosing creative concepts.\n*Fix:* Delete the rule. Alternatively, protect oral and visual information that is identified as confidential at disclosure or that a reasonable person would understand to be confidential, with an optional written summary and a longer window (30 days) that does not defeat protection.\n\n## Significant\n\n**3. Section 3: Exclusions and burden of proof.**\n- The \"written records\" requirement applies to all four exclusions, including public availability, which is odd and hard to satisfy. This burden falls on both parties, but it matters most for a creative agency that may independently develop similar concepts. Consider limiting it to (b) and (c).\n- Exclusion (b) says \"known... without restriction,\" which is fine. Exclusion (c) is reasonable.\n- There is no carve-out for legally compelled disclosure (see item 5).\n\n**4. Section 6: Term and survival are internally inconsistent.**\n- The agreement \"covers\" information disclosed for 2 years, but Section 7 requires return or destruction on expiration, and the survival period is 3 years after expiration or termination. If either party terminates on 30 days' notice, the protection window is cut short without the parties intending it.\n- The survival clause says obligations survive 3 years \"after expiration or termination,\" so protection could run up to 5 years from the Effective Date. Make sure that matches the business intent.\n- Trade secret protection is indefinite, which is good. However, there is no equivalent for client or personal data or other highly sensitive information. Consider whether this matters for Halcyra, a biologics company that may share regulated or sensitive data.\n\n**5. Missing compelled-disclosure clause.**\nThere is no provision for disclosure required by law, subpoena, or court order. The Receiving Party would be in breach by complying with a legal demand.\n*Fix:* Permit compelled disclosure with prompt notice (where lawful), cooperation on protective measures, and disclosure limited to what is legally required.\n\n**6. Section 11: Governing law and dispute resolution.**\n- The arbitration is \"administered... under the commercial arbitration rules then in effect\" but does not name an administrator (AAA, JAMS). That ambiguity invites a fight over how to start the arbitration. It also leaves open the number of arbitrators and the language and scope of the proceeding.\n- Arbitration is mandatory and exclusive, which conflicts with Section 9. Section 9 allows a party to seek injunctive relief, but Section 11 sends \"any dispute\" to arbitration. Without an express carve-out for courts to grant interim or injunctive relief, a party could be forced to wait for an arbitrator while its information is being misused. This is a serious gap for an NDA, since speed matters.\n- Delaware law with a Chicago seat is workable for Lanternfield, but there is no connection between Delaware and Lanternfield (an Illinois LLC). Illinois law would be more convenient and predictable. If Delaware stays, it is a negotiating point to trade.\n*Fix:* Name the administrator (such as AAA), specify one arbitrator, and add a carve-out allowing either party to seek injunctive relief in any court of competent jurisdiction.\n\n**7. Section 5: Representatives.**\n- The definition includes affiliates' personnel and contractors, which is broad. Halcyra could share Lanternfield's creative concepts with other agencies or vendors working for it, provided they are \"bound by confidentiality obligations\" and \"need to know it for the Purpose.\" Lanternfield cannot verify any of this. Consider limiting contractors to those under written agreements and excluding competitors of the Disclosing Party.\n- The defined term \"Representatives\" is used in Section 3 before it is defined in Section 5. That is a minor drafting point, but it should be fixed.\n\n## Moderate\n\n**8. Section 7: Return or destruction carve-outs.**\nThe exception for backups and \"document retention policies\" is broad. Retained information stays protected \"for as long as it is retained,\" which helps, but this conflicts with the fixed survival period in Section 6. Clarify which controls. Also, the \"or after this Agreement expires or is terminated\" trigger runs from expiration, so the clock is unclear if there are overlapping disclosures. The clause should also allow Lanternfield's counsel to keep one archival copy for legal compliance.\n\n**9. Section 8: No license, and nothing on residuals or ownership of ideas.**\nThis is generally fine and favorable to the disclosing party. But the agreement does not address who owns creative work product or concepts developed during the evaluation. Lanternfield should avoid disputes over pitch materials. Consider a statement that all concepts, pitches, and creative materials Lanternfield develops remain its property unless a services agreement says otherwise, and that no implied assignment arises.\n\n**10. Section 9: Remedies.**\n- \"Without the necessity of proving actual damages\" is acceptable, but there is no waiver of any bond requirement for injunctive relief. Add one, as it makes enforcement faster.\n- Each party bears its own fees. A prevailing-party fee clause would better deter breach by a larger counterparty, but this is a business decision.\n\n**11. Section 10: Assignment.**\nEither party may assign to an affiliate or successor without consent, on notice only. Halcyra could assign to an acquirer that is a Lanternfield competitor, and Lanternfield would have no say. Require consent for assignment to a competitor of the other party, or give a termination right and a right to demand return of information on a change of control.\n\n## Minor and cleanup\n\n12. **Notices (Section 12):** The signature block gives only \"Evanston, Illinois\" and \"Cambridge, Massachusetts\" as notice addresses. These are not usable street addresses, and no email addresses are provided, even though email notice is permitted. Add full addresses and an email contact, and a named recipient.\n13. **Signature blocks:** Names, titles, and dates are blank. Confirm signatory authority.\n14. **Effective Date:** July 13, 2026 is stated as fixed. If discussions or disclosures began earlier, Section 13 (entire agreement) supersedes prior understandings and leaves earlier disclosures unprotected. Add language covering information disclosed before the Effective Date in connection with the Purpose.\n15. **Purpose definition:** It covers \"evaluation, negotiation, and performance\" of the relationship. Including \"performance\" means the NDA effectively functions as a services-term confidentiality clause, yet it expires after 2 years and permits termination on 30 days' notice. The parties should either narrow it to evaluation and negotiation or ensure the services agreement has its own confidentiality terms and supersedes this one.\n16. **Missing provisions to consider:**\n    - Non-solicitation of employees (if relevant), though this is not typical in NDAs.\n    - Data protection provisions, if personal data or regulated health-related information may be shared.\n    - A securities-law notice, if Halcyra is public.\n    - A statement that the NDA does not restrict defend-trade-secrets-act whistleblower disclosures (DTSA immunity notice), which matters mainly for individuals but is customary.\n    - A residuals clause is not needed and should be resisted.\n17. **Section 14:** Severability is fine, but add a reformation clause so a court or arbitrator can narrow an overbroad provision instead of striking it.\n\n## Recommended priorities for negotiation\n\n1. Make the confidentiality covenant truly mutual (Section 2).\n2. Remove or soften the oral and visual disclosure rule (Section 1(a)).\n3. Fix arbitration and add an injunctive-relief carve-out (Sections 9 and 11).\n4. Add a compelled-disclosure clause.\n5. Clarify term, survival, and the effect of early termination.\n6. Tighten assignment and Representatives.\n\nI can prepare a redline with proposed replacement language for any of these. Please also tell me which side is expected to disclose more, since that affects how hard to push on items 2, 7, and 11.",
+  "seconds": 25.0,
+  "usage": {
+    "input_tokens": 2642,
+    "output_tokens": 3173,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "serious",
+      "evidence": "Only Lanternfield has a confidentiality obligation... express non-disclosure covenant runs one way"
+    },
+    "2": {
+      "label": "serious",
+      "evidence": "oral and visual disclosure rule... Lanternfield's ideas could lose protection if someone misses a 5-day deadline"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "\"written records\" requirement applies to all four exclusions... Consider limiting it to (b) and (c)"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Term and survival are internally inconsistent"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "Including \"performance\" means the NDA effectively functions as a services-term confidentiality clause... narrow it to evaluation and negotiation"
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "definition includes affiliates' personnel and contractors, which is broad... Lanternfield cannot verify any of this"
+    },
+    "7": {
+      "label": "missing",
+      "evidence": "Missing compelled-disclosure clause. There is no provision for disclosure required by law"
+    },
+    "8": {
+      "label": "minor",
+      "evidence": "exception for backups and \"document retention policies\" is broad... Clarify which controls"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "A residuals clause is not needed and should be resisted"
+    },
+    "10": {
+      "label": "minor",
+      "evidence": "Non-solicitation of employees (if relevant), though this is not typical in NDAs"
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "no waiver of any bond requirement for injunctive relief. Add one"
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "Arbitration is mandatory and exclusive, which conflicts with Section 9... This is a serious gap for an NDA"
+    },
+    "13": {
+      "label": "minor",
+      "evidence": "Halcyra could assign to an acquirer that is a Lanternfield competitor... Require consent for assignment to a competitor"
+    },
+    "14": {
+      "label": "not_flagged",
+      "evidence": "This is generally fine and favorable to the disclosing party"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3647,
+    "output_tokens": 704,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

@@ -1,0 +1,79 @@
+{
+  "file": "nda_10.docx",
+  "company": "Duskwater Transit LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Duskwater Transit LLC\n\n## Critical problems\n\n**1. The \"mutual\" agreement is actually one-way against Duskwater (Sections 1(c), 1(d), 2).**\n- \"Disclosing Party\" is defined as Ironpeak and its affiliates. \"Receiving Party\" is defined as Duskwater only.\n- Only Duskwater owes confidentiality, use, return, and compelled-disclosure obligations. Ironpeak owes nothing.\n- Duskwater's information is not protected at all. This contradicts the title, the Background recital, and the statement in Section 2 that the Agreement protects information \"exchanged.\"\n- Section 2 is headed \"Mutual Obligations\" but imposes the duty only on the \"Receiving Party.\"\n- Fix: define both terms by role. \"Disclosing Party\" means a party disclosing, and \"Receiving Party\" means a party receiving. Delete the affiliate language or make it reciprocal. Section 10 and Section 9 already assume mutuality.\n\n**2. Exposure from \"affiliates\" as Disclosing Parties (Section 1(c)).** Duskwater would owe duties for information from any Ironpeak affiliate, which is an open-ended and unidentifiable group. Ironpeak, not the affiliates, should be the party that enforces rights.\n\n**3. Delaware law and exclusive Wilmington venue (Section 12).** Neither party is located in Delaware, and Duskwater is in Oregon. Ironpeak is only formed there. Litigating in Delaware is costly and one-sided in practice. Fix: Oregon law and Portland courts, or a neutral or defendant's-home-forum clause.\n\n## Significant problems\n\n**4. Weak exclusions (Section 3).**\n- The \"demonstrate by written records\" burden applies to all four exclusions, including public availability, which is a heavy burden for Duskwater.\n- No exclusion for information that Duskwater develops independently, aside from the narrow clause (c).\n- The residual-knowledge position is not addressed, which matters if Duskwater staff will see Ironpeak's scheduling methods.\n- Fix: drop the blanket written-records requirement or limit it to clauses (b) and (c).\n\n**5. Survival and trade secrets (Section 7).**\n- Obligations survive three years after expiration or termination, and trade secrets are protected indefinitely. Combined with the two-year disclosure window, the tail can reach about five years.\n- \"Trade secret\" is undefined, and the indefinite tail is an open-ended burden on Duskwater alone. If the NDA is made mutual, this cuts both ways, so decide whether you want it.\n- Termination notice is 30 days, but the survival period still runs from termination. That is acceptable but should be confirmed.\n\n**6. Return/destruction (Section 8).**\n- The trigger is \"after this Agreement expires or is terminated,\" so the obligation is automatic with no request. Duskwater would have to track this.\n- Retained backup or legally required copies stay subject to the Agreement \"for as long as retained,\" which is potentially perpetual. Consider limiting this to the survival period.\n- The \"on request\" certification is fine, but add a carve-out for notes and analyses prepared by Duskwater (derivative materials), which should be destroyed but not \"returned.\"\n\n**7. Scope of Representatives (Section 5).**\n- The reference to \"its and its affiliates'\" personnel is helpful, but \"bound by confidentiality obligations at least as protective\" is hard for professional advisors with duties of confidentiality. Accept professional-duty confidentiality as sufficient.\n- Duskwater is fully responsible for Representatives' breaches. This is common, but it is strict liability for contractors. Consider limiting it to Representatives who received information from Duskwater.\n- Lenders, insurers, and potential financing sources are not included.\n\n**8. Compelled disclosure (Section 6).** Duskwater must cooperate \"at the Disclosing Party's expense,\" which is good. However, there is no carve-out for routine regulatory examinations that do not target the counterparty. Duskwater, a transit business, may have public-agency or audit obligations. Also check whether Duskwater has public-records exposure from any government customers.\n\n## Moderate and drafting issues\n\n**9. Assignment (Section 11).** Either party may assign to an affiliate or successor without consent. Duskwater could end up bound to a competitor of Duskwater that acquires Ironpeak. Add a carve-out for assignment to a competitor, or give Duskwater a termination right on a change of control.\n\n**10. Remedies (Section 10).**\n- The injunctive relief clause is mutual in wording, but without a mutual Disclosing/Receiving structure it will operate against Duskwater only.\n- \"Without the necessity of proving actual damages\" is acceptable, but add that no bond is waived unless that is intended.\n- No fee-shifting, so each side bears its own costs. This is neutral.\n\n**11. Marking standard (Section 1(a)).** The \"reasonable person\" standard plus oral and visual disclosure creates uncertainty about what Duskwater must protect. Consider requiring written confirmation of oral disclosures within 30 days, or tighten the standard.\n\n**12. Purpose includes \"performance\" (Section 1(b)).** Use is limited to evaluating, negotiating, and performing a services relationship. Performance should be governed by a services contract. The NDA also does not state that it will be superseded by it. Fix by limiting Purpose to evaluation and negotiation.\n\n**13. No non-solicit, standstill, or non-circumvention** is present. That is good for Duskwater, but be aware that Ironpeak may ask for them.\n\n**14. No data-privacy or personal-data provision.** Fleet scheduling may involve driver or employee data. Add a clause or exclude personal data from the NDA.\n\n**15. Entire agreement (Section 14).** It supersedes all prior understandings on the subject matter. If anything was shared before September 8, 2026, it would no longer be protected. Add coverage for information disclosed before the Effective Date.\n\n**16. Notices and execution (Section 13 and signature block).**\n- The notice addresses are city and state only. Full addresses and email contacts are needed.\n- Email notice is effective on \"confirmation of receipt,\" which an unresponsive recipient can avoid. Add a deemed-receipt rule.\n- Signature blocks are blank, so confirm that the signatories have authority.\n\n**17. Missing provisions.**\n- No jury-waiver clause (optional).\n- No export-control clause.\n- No privilege-preservation clause for shared legal material.\n- No clause allowing Duskwater to keep a record copy for legal-compliance purposes beyond what Section 8 allows.\n\n## Priority recommendation\nPush back first on items 1, 2, and 3. The one-way structure is the central defect, and it is likely a drafting error that Ironpeak should accept correcting. Then address items 4, 5, 6, 9, and 12.\n\nIf you tell me which commercial points matter most to Duskwater, such as how much of its own information it will disclose, I can draft replacement language.",
+  "seconds": 18.7,
+  "usage": {
+    "input_tokens": 2814,
+    "output_tokens": 2365,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "serious",
+      "evidence": "The \"mutual\" agreement is actually one-way against Duskwater"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Marking standard: \"reasonable person\" standard plus oral and visual disclosure creates uncertainty... Consider requiring written confirmation"
+    },
+    "3": {
+      "label": "serious",
+      "evidence": "Weak exclusions (Section 3)... burden applies to all four exclusions"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Survival and trade secrets: tail can reach about five years... indefinite tail is an open-ended burden"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "Purpose includes \"performance\"... Fix by limiting Purpose to evaluation and negotiation"
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Scope of Representatives (Section 5)... strict liability for contractors"
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "no carve-out for routine regulatory examinations that do not target the counterparty"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "Return/destruction (Section 8)... obligation is automatic with no request... potentially perpetual"
+    },
+    "9": {
+      "label": "minor",
+      "evidence": "The residual-knowledge position is not addressed"
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": "No non-solicit, standstill, or non-circumvention is present. That is good for Duskwater"
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "injunctive relief clause is mutual in wording, but... will operate against Duskwater only"
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "Delaware law and exclusive Wilmington venue (Section 12)... costly and one-sided in practice"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Duskwater could end up bound to a competitor of Duskwater that acquires Ironpeak"
+    },
+    "14": {
+      "label": "not_flagged",
+      "evidence": ""
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 2839,
+    "output_tokens": 666,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

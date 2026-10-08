@@ -56,6 +56,7 @@ RAW = OUT / "eval" / "raw"
 RUNS = 3
 STATUSES = ("acceptable", "fallback", "escalate", "absent")
 GRADE_TO_STATUS = {"serious": "escalate", "minor": "fallback", "not_flagged": "acceptable"}
+DASHES = (chr(0x2014), chr(0x2013))
 BASELINE_QUOTE_MIN = 30   # quoted passages in the baseline answer at least this long are checked
 
 BASELINE_PROMPT = "Review this NDA and list any problems. You act for {company}.\n\n<nda>\n{text}\n</nda>"
@@ -127,8 +128,11 @@ def raw_path(kind: str, stem: str) -> Path:
 
 
 def save(path: Path, obj: dict) -> None:
+    """The repo bans em and en dashes, so any the model writes are saved as hyphens. The NDAs have
+    none, so this never changes a quote."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf8", newline="\n")
+    text = json.dumps(obj, indent=2, ensure_ascii=False).replace(DASHES[0], "-").replace(DASHES[1], "-")
+    path.write_text(text + "\n", encoding="utf8", newline="\n")
 
 
 def run_skill(entry: dict, run: int, client, s: dict, topics: dict) -> dict:
@@ -247,7 +251,7 @@ def baseline_quotes(answer: str, source: str) -> tuple[int, int]:
 
 def score(pred_by_nda: dict[str, list[dict[int, str]]], gold: dict, topics: dict) -> dict:
     """pred_by_nda: file -> list of {topic_id: status} (one per run; a missing topic counts as wrong)."""
-    total = correct = 0
+    total = correct = loose = 0
     esc_total = esc_hit = 0
     acc_total = acc_escalated = 0
     per_topic = {tid: [0, 0] for tid in topics}
@@ -261,6 +265,7 @@ def score(pred_by_nda: dict[str, list[dict[int, str]]], gold: dict, topics: dict
                 total += 1
                 per_topic[tid][1] += 1
                 confusion[g][p] += 1
+                loose += p == g or {p, g} == {"acceptable", "absent"}
                 if p == g:
                     correct += 1
                     per_topic[tid][0] += 1
@@ -278,6 +283,7 @@ def score(pred_by_nda: dict[str, list[dict[int, str]]], gold: dict, topics: dict
         return round(a / b, 4) if b else None
 
     return {"decisions": total, "accuracy": ratio(correct, total),
+            "accuracy_absent_as_acceptable": ratio(loose, total),
             "escalation_recall": ratio(esc_hit, esc_total), "escalations_gold": esc_total,
             "escalations_caught": esc_hit,
             "false_escalation_rate": ratio(acc_escalated, acc_total), "acceptable_gold": acc_total,
@@ -431,6 +437,8 @@ def render_md(res: dict, topics: dict) -> str:
               "| Measure | Skill | Baseline |", "|---|---|---|",
               f"| Topic decisions scored | {s['decisions']} | {b['decisions']} |",
               f"| Status accuracy | {pct(s['accuracy'])} | {pct(b['accuracy'])} |",
+              f"| Accuracy, absent and acceptable treated as one | {pct(s['accuracy_absent_as_acceptable'])} "
+              f"| {pct(b['accuracy_absent_as_acceptable'])} |",
               f"| Escalation recall | {pct(s['escalation_recall'])} ({s['escalations_caught']}/{s['escalations_gold']}) "
               f"| {pct(b['escalation_recall'])} ({b['escalations_caught']}/{b['escalations_gold']}) |",
               f"| False escalation rate | {pct(s['false_escalation_rate'])} ({s['false_escalations']}/{s['acceptable_gold']}) "

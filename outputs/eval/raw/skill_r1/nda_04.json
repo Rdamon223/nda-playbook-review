@@ -1,0 +1,182 @@
+{
+  "file": "nda_04.docx",
+  "company": "Oakhaven Data Services Inc.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "valid": true,
+  "problems": [],
+  "first_attempt_problems": [],
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 2864,
+    "output_tokens": 3007,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 9720
+  },
+  "review": {
+    "source_file": "data/synthetic_ndas/nda_04.docx",
+    "company": "Oakhaven Data Services Inc.",
+    "playbook_version": "Version 1",
+    "model": "claude-sonnet-5-5",
+    "findings": [
+      {
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Each party, when acting as Receiving Party, shall hold the other party’s Confidential Information in strict confidence, and the obligations in this Agreement apply equally to both parties.",
+        "section_ref": "2",
+        "rationale": "Obligations apply equally to both parties. Note that Section 11 has a one-way fee clause, which is assessed under topic 11.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "that is marked or identified as confidential or that a reasonable person would understand to be confidential given the nature of the information and the circumstances of disclosure. Oral and visual disclosures are covered whether or not they are later summarized in writing.",
+        "section_ref": "1(a)",
+        "rationale": "The definition covers non-public information in any form with a reasonable-person standard, covers oral disclosures without a written summary requirement, and has no carve-outs.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The obligations in this Agreement do not apply to information that the Receiving Party can demonstrate by written records: (a) is or becomes publicly available through no breach of this Agreement by the Receiving Party or its Representatives;",
+        "section_ref": "3",
+        "rationale": "All four standard exclusions are present, with no breach carve-in for public information, a without-use independent-development test, and the burden on the Receiving Party (written records are acceptable).",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "This Agreement covers Confidential Information disclosed during the two (2) years following the Effective Date. Either party may terminate this Agreement earlier on thirty (30) days’ written notice to the other party. The Receiving Party’s obligations under this Agreement survive for three (3) years after expiration or termination, and obligations with respect to trade secrets survive for as long as the information remains a trade secret under applicable law.",
+        "section_ref": "7",
+        "rationale": "A 2-year term, early termination right, 3-year survival and trade secret protection all meet the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party shall use the Disclosing Party’s Confidential Information solely for the Purpose and for no other purpose.",
+        "section_ref": "4",
+        "rationale": "Use is limited to the Purpose, which is defined in Section 1(b) as evaluating, negotiating and performing the services relationship.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party may disclose Confidential Information to its and its affiliates’ employees, officers, directors, contractors, and professional advisors (including legal, accounting, and financial advisors) who need to know it for the Purpose and who are bound by confidentiality obligations at least as protective as those in this Agreement (collectively, “Representatives”).",
+        "section_ref": "5",
+        "rationale": "Matches the Preferred position, including need-to-know, equal confidentiality obligations and responsibility for Representatives' breaches (last sentence of Section 5).",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "If the Receiving Party or any of its Representatives is required by law, regulation, subpoena, or court order to disclose any Confidential Information, the Receiving Party shall, to the extent legally permitted, give the Disclosing Party prompt written notice so that the Disclosing Party may seek a protective order or other remedy, reasonably cooperate with those efforts at the Disclosing Party’s expense, and disclose only the portion of the Confidential Information that it is legally required to disclose.",
+        "section_ref": "6",
+        "rationale": "Includes a legal requirement trigger, notice where permitted, cooperation at the Disclosing Party's expense and a limit to the required portion.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Within thirty (30) days after the Disclosing Party’s written request, or after this Agreement expires or is terminated, the Receiving Party shall return or destroy all of the Disclosing Party’s Confidential Information in its possession and, on request, certify the destruction in writing.",
+        "section_ref": "8",
+        "rationale": "30-day return or destruction, written certification on request, and a backup and legal retention carve-out with continued confidentiality (second sentence of Section 8). No escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "status": "absent",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "No residuals clause appears anywhere in the NDA, which is the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "status": "escalate",
+        "clause_found": true,
+        "quote": "neither party shall, directly or indirectly, solicit or accept business from any customer or supplier of the other party identified to it through the other party’s Confidential Information.",
+        "section_ref": "9",
+        "rationale": "This is a non-solicit covering customers and suppliers, and it also bars accepting business, which is a restriction on doing business. It runs 24 months after the term. Both are escalate triggers.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "status": "escalate",
+        "clause_found": true,
+        "quote": "In any action to enforce this Agreement, Pellucid is entitled to recover from Oakhaven its reasonable attorneys’ fees and costs.",
+        "section_ref": "11",
+        "rationale": "Only the Counterparty (Pellucid) may recover legal fees, and the Company (Oakhaven) must pay them regardless of outcome. This is an escalate trigger.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "This Agreement is governed by the laws of the State of Delaware, without regard to its conflict of laws principles. Each party submits to the exclusive jurisdiction of the state and federal courts located in Wilmington, Delaware for any action arising out of this Agreement.",
+        "section_ref": "13",
+        "rationale": "Delaware law with exclusive Delaware venue is the Preferred position. There is no arbitration or one-sided waiver.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "status": "fallback",
+        "clause_found": true,
+        "quote": "Neither party may assign or transfer this Agreement, whether voluntarily, by operation of law, by merger, or by change of control, without the other party’s prior written consent.",
+        "section_ref": "12",
+        "rationale": "The clause bars all assignment, including in a merger or change of control, without consent. It applies equally to both parties and has no escalate trigger, so the written fallback applies.",
+        "proposed_language": "Neither party may assign this Agreement without the other party's prior written consent, which shall not be unreasonably withheld, except that either party may assign this Agreement without consent to an affiliate or to a successor in connection with a merger, acquisition, or sale of all or substantially all of its assets, on written notice to the other party.",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "No license under any patent, copyright, trade secret, or other intellectual property right is granted or implied by this Agreement or by any disclosure under it. All Confidential Information is provided “as is”, and neither party makes any warranty, express or implied, as to its accuracy or completeness. Neither party is obligated to enter into any further agreement or transaction, and either party may end discussions at any time for any reason.",
+        "section_ref": "10",
+        "rationale": "All three statements (no license, as-is, no obligation to proceed) are present, and no escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      }
+    ]
+  },
+  "raw_reply": null,
+  "memo": "# NDA review memo: nda_04.docx\n\nReviewed 2026-10-08 against the mutual NDA playbook (Version 1) for Oakhaven Data Services Inc., model `claude-sonnet-5-5`.\n\n**2 escalate, 1 fallback, 10 acceptable, 1 absent.**\n\n| # | Topic | Severity | Status | Section | Confidence |\n|---|---|---|---|---|---|\n| 10 | Non-solicitation or non-compete language | high | ESCALATE | 9 | high |\n| 11 | Remedies and injunctive relief | medium | ESCALATE | 11 | high |\n| 13 | Assignment and change of control | low | fallback | 12 | high |\n| 1 | Mutuality | high | acceptable | 2 | high |\n| 3 | Standard exclusions | high | acceptable | 3 | high |\n| 7 | Compelled disclosure | high | acceptable | 6 | high |\n| 2 | Definition of Confidential Information | medium | acceptable | 1(a) | high |\n| 4 | Term of the agreement and survival of obligations | medium | acceptable | 7 | high |\n| 5 | Permitted use (purpose limitation) | medium | acceptable | 4 | high |\n| 6 | Permitted disclosure to representatives | medium | acceptable | 5 | high |\n| 8 | Return or destruction of materials | medium | acceptable | 8 | high |\n| 12 | Governing law and venue | low | acceptable | 13 | high |\n| 14 | No license, no warranty, no obligation to proceed | low | acceptable | 10 | high |\n| 9 | Residuals clause | high | absent | missing | high |\n\n## Escalations (a lawyer decides)\n\n**10. Non-solicitation or non-compete language** (section 9). This is a non-solicit covering customers and suppliers, and it also bars accepting business, which is a restriction on doing business. It runs 24 months after the term. Both are escalate triggers.\n> neither party shall, directly or indirectly, solicit or accept business from any customer or supplier of the other party identified to it through the other party’s Confidential Information.\n\n**11. Remedies and injunctive relief** (section 11). Only the Counterparty (Pellucid) may recover legal fees, and the Company (Oakhaven) must pay them regardless of outcome. This is an escalate trigger.\n> In any action to enforce this Agreement, Pellucid is entitled to recover from Oakhaven its reasonable attorneys’ fees and costs.\n\n## Fallbacks (playbook wording to propose)\n\n**13. Assignment and change of control** (section 12). The clause bars all assignment, including in a merger or change of control, without consent. It applies equally to both parties and has no escalate trigger, so the written fallback applies.\n> Neither party may assign or transfer this Agreement, whether voluntarily, by operation of law, by merger, or by change of control, without the other party’s prior written consent.\n\nPropose: \"Neither party may assign this Agreement without the other party's prior written consent, which shall not be unreasonably withheld, except that either party may assign this Agreement without consent to an affiliate or to a successor in connection with a merger, acquisition, or sale of all or substantially all of its assets, on written notice to the other party.\"\n\n## Acceptable or absent\n\n- **1. Mutuality** (section 2): Obligations apply equally to both parties. Note that Section 11 has a one-way fee clause, which is assessed under topic 11.\n- **3. Standard exclusions** (section 3): All four standard exclusions are present, with no breach carve-in for public information, a without-use independent-development test, and the burden on the Receiving Party (written records are acceptable).\n- **7. Compelled disclosure** (section 6): Includes a legal requirement trigger, notice where permitted, cooperation at the Disclosing Party's expense and a limit to the required portion.\n- **2. Definition of Confidential Information** (section 1(a)): The definition covers non-public information in any form with a reasonable-person standard, covers oral disclosures without a written summary requirement, and has no carve-outs.\n- **4. Term of the agreement and survival of obligations** (section 7): A 2-year term, early termination right, 3-year survival and trade secret protection all meet the Preferred position.\n- **5. Permitted use (purpose limitation)** (section 4): Use is limited to the Purpose, which is defined in Section 1(b) as evaluating, negotiating and performing the services relationship.\n- **6. Permitted disclosure to representatives** (section 5): Matches the Preferred position, including need-to-know, equal confidentiality obligations and responsibility for Representatives' breaches (last sentence of Section 5).\n- **8. Return or destruction of materials** (section 8): 30-day return or destruction, written certification on request, and a backup and legal retention carve-out with continued confidentiality (second sentence of Section 8). No escalate trigger applies.\n- **12. Governing law and venue** (section 13): Delaware law with exclusive Delaware venue is the Preferred position. There is no arbitration or one-sided waiver.\n- **14. No license, no warranty, no obligation to proceed** (section 10): All three statements (no license, as-is, no obligation to proceed) are present, and no escalate trigger applies.\n- **9. Residuals clause** (no clause): No residuals clause appears anywhere in the NDA, which is the Preferred position.\n\n---\n\n*This memo is a first-pass review generated with an AI tool against a written playbook. It is not legal advice. A lawyer must review the NDA and this memo before anyone relies on either.*\n",
+  "seconds": 15.0,
+  "run": 1
+}

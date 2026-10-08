@@ -1,0 +1,79 @@
+{
+  "file": "nda_09.docx",
+  "company": "Northbask Manufacturing Co.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Northbask Manufacturing Co.\n\nNorthbask is a manufacturer and likely the main discloser (production data, defect images, process specs, quality records). Glimmerton is a software and ML vendor. The risks below are ranked on that assumption.\n\n## Significant problems\n\n**1. Section 4: ML training right (most serious issue)**\n- Glimmerton may use Northbask's Confidential Information to \"train, test, and improve its machine learning models.\" This goes beyond the Purpose and swallows the use restriction.\n- The only safeguard is that models must not \"disclose Confidential Information to third parties.\" That is vague and hard to verify or prove. It does not stop Northbask's process knowledge, defect data, or tolerances from being embedded in models that benefit competitors without being \"disclosed.\"\n- No deletion or unlearning is possible once data is in a model, and Section 7 does not address it.\n- The clause is mutual in form but benefits mainly the software vendor.\n- **Fix:** Delete the clause. If some training is acceptable, limit it to the Purpose, to models used only for Northbask, and to specified data, with no use for other customers, and require a commercial agreement to govern it.\n\n**2. Section 3: Exclusions are incomplete and loosely drafted**\n- There is no exclusion for independently developed information. That is usually in the Receiving Party's favor, so its absence is not a problem for Northbask. The real gaps are elsewhere.\n- Exclusion (b) covers information \"known... before disclosure.\" Combined with the written-records burden, this is generally fine, but there is no carve-out stating that exclusions do not apply to personal data or to combinations of information.\n- **Fix:** Add that information is not excluded merely because individual elements are public.\n\n**3. Section 8: Term and survival**\n- Protection lasts only 3 years after expiration or termination, and the disclosure window is 2 years. For manufacturing know-how, 3 years can be too short.\n- Trade secrets are protected longer, but only if they qualify as trade secrets, so non-trade-secret technical data (process parameters, supplier terms) loses protection.\n- Either party can terminate on 30 days' notice, which shortens the disclosure window.\n- **Fix:** Extend survival to 5 years or more for technical information, with indefinite protection for trade secrets and for data about Northbask's processes, customers, and pricing.\n\n**4. Section 7: Return and destruction carve-outs**\n- Retention is allowed for backups and for \"document retention policies.\" The second is an open-ended loophole because Glimmerton can write any policy.\n- Retained information stays protected only \"for as long as it is retained,\" which is helpful, but it conflicts with the survival period in Section 8.\n- There is no obligation to destroy derivatives (notes, analyses, model artifacts).\n- **Fix:** Limit retention to legal requirements and routine backups, with no access and no restoration. Cover derivatives. Require a written officer certification, not only \"on request.\"\n\n**5. Section 5: Representatives**\n- Includes \"affiliates' employees\" and \"contractors,\" which is broad. Glimmerton could share with offshore or unnamed subcontractors, including AI or cloud providers.\n- Representatives must be bound by obligations \"at least as protective,\" but there is no requirement that these be written.\n- **Fix:** Require written obligations, restrict contractors, require consent for subprocessors or third-party AI tools, and add a duty to notify Northbask of unauthorized disclosure.\n\n## Moderate problems\n\n**6. Section 9: No fee-shifting; one-sided practical effect**\n- Each party bears its own fees, so enforcing against a breach is costly. Northbask would likely be the enforcer.\n- Injunctive relief without proving damages is useful, but there is no waiver of bond.\n- **Fix:** Prevailing-party fees, and a waiver of bond requirements.\n\n**7. Section 11: Assignment**\n- Either party may assign freely to affiliates or an acquirer. Glimmerton could be bought by a Northbask competitor, which would then hold Northbask's information.\n- **Fix:** Remove the exception or add a right to terminate and demand return if the assignee is a competitor.\n\n**8. Section 10: Venue and law**\n- Wisconsin law and Milwaukee courts are favorable to Northbask. The exclusive venue could hinder quick injunctions against Glimmerton in California, where enforcement would occur.\n- **Fix:** Make the venue non-exclusive for injunctive relief.\n\n**9. Section 6: Compelled disclosure**\n- Northbask must cooperate \"at the Disclosing Party's expense.\" This is acceptable. But there is no limit on voluntary regulatory disclosures, and no express carve-out for routine regulatory examinations.\n\n**10. Missing security and breach notification terms**\n- There is no standard of care (at least the care applied to its own information, and no less than reasonable care).\n- No duty to notify promptly of unauthorized access or loss.\n- **Fix:** Add both.\n\n## Drafting and clean-up issues\n\n- **Purpose** is defined in Section 4 but used in Section 1 and the Preamble before that. Move the definition forward.\n- **Section 2:** The \"marked or identified as confidential\" test is combined with a reasonable-person standard. That is acceptable, but Northbask should confirm it wants this and not a broader definition. Consider expressly including data, images, specifications, and samples.\n- **Section 12:** No express statement that information remains the Disclosing Party's property. Add ownership language and a prohibition on reverse engineering of samples, software, and models.\n- **Section 7:** \"after this Agreement expires or is terminated\" and \"30 days after written request\" are ambiguous in how they interact.\n- **Section 13:** Notice addresses show only city and state. Insert full addresses and email addresses. The signature block lacks names, titles, and dates.\n- **Section 17:** The relationship clause is acceptable. \"Independent contractors\" is slightly odd for an NDA, but harmless.\n- **Missing:** Privacy and personal data handling, export control, and a statement that no publicity or use of names is allowed.\n- **Section 14:** The entire agreement clause supersedes \"all prior discussions.\" Confirm nothing disclosed earlier is left unprotected, and consider covering earlier disclosures.\n- **Section 8:** Clarify whether information disclosed before the Effective Date is covered.\n\n## Recommended priorities\n\n1. Strike the ML training right in Section 4.\n2. Extend the confidentiality term and tighten retention in Sections 7 and 8.\n3. Restrict contractors, subprocessors, and assignment.\n4. Add security and breach notification duties.\n5. Add fee-shifting and bond waiver.\n6. Complete the signature block and notice details.\n\nI can prepare redline language for any of these.",
+  "seconds": 18.4,
+  "usage": {
+    "input_tokens": 2569,
+    "output_tokens": 2271,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "minor",
+      "evidence": "The clause is mutual in form but benefits mainly the software vendor."
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Northbask should confirm it wants this and not a broader definition. Consider expressly including data, images, specifications, and samples."
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Exclusions are incomplete and loosely drafted; add that information is not excluded merely because individual elements are public."
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "For manufacturing know-how, 3 years can be too short. Extend survival to 5 years or more"
+    },
+    "5": {
+      "label": "serious",
+      "evidence": "ML training right (most serious issue); goes beyond the Purpose and swallows the use restriction."
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Includes \"affiliates' employees\" and \"contractors,\" which is broad."
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "Northbask must cooperate \"at the Disclosing Party's expense.\" This is acceptable. But there is no limit on voluntary regulatory disclosures"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "\"document retention policies\" is an open-ended loophole; no obligation to destroy derivatives"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "No fee-shifting; no waiver of bond. Moderate problems."
+    },
+    "12": {
+      "label": "minor",
+      "evidence": "The exclusive venue could hinder quick injunctions against Glimmerton in California"
+    },
+    "13": {
+      "label": "minor",
+      "evidence": "Either party may assign freely to affiliates or an acquirer. Glimmerton could be bought by a Northbask competitor"
+    },
+    "14": {
+      "label": "minor",
+      "evidence": "No express statement that information remains the Disclosing Party's property. Add ownership language"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 2745,
+    "output_tokens": 666,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

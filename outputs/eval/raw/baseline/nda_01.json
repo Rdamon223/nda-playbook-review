@@ -1,0 +1,79 @@
+{
+  "file": "nda_01.docx",
+  "company": "Fernhollow Analytics LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Fernhollow Analytics LLC\n\nOverall this is a reasonably balanced mutual NDA. Nothing is fatal, but several points need fixing or a conscious decision. They are ordered by importance.\n\n## Higher priority\n\n**1. Compelled disclosure (§6) is incomplete.**\n- There is no obligation to give the Disclosing Party prompt notice of the demand, so Fernhollow could lose the chance to seek a protective order.\n- There is no duty to cooperate or to use reasonable efforts to obtain confidential treatment.\n- It refers only to \"law or court order.\" It should also cover subpoenas, regulatory demands and stock-exchange rules, with notice where legally permitted.\n- *Fix:* add notice, cooperation, and a \"disclose only what counsel advises is legally required\" standard.\n\n**2. The survival and term structure leaves a gap (§7).**\n- The agreement covers information disclosed during the 2 years after the Effective Date. Obligations then run 3 years after expiration or termination.\n- Information disclosed in the final days of the term gets protection for only about 3 years. That is probably fine, but the text is ambiguous about whether the 3 years runs from termination or from each disclosure.\n- Only trade secrets get indefinite protection. Fernhollow's non-trade-secret material, such as customer data, pricing, models and methodologies, expires after 3 years. If Fernhollow will share client data or personal data, it needs longer protection, or protection for as long as the information stays confidential.\n- Either party can terminate on 30 days' notice. Pair this with the §8 return/destroy trigger, which fires on termination.\n- *Fix:* clarify the survival period, and consider a longer period (5 years) or an indefinite period for specified categories such as personal data, source code and models.\n\n**3. Ohio law and exclusive Franklin County state-court venue (§12).**\n- This favors Quillbrook. Fernhollow, based in Chicago, would have to litigate in Columbus, including for injunctive relief.\n- \"State courts\" only means that federal court in Columbus is unavailable even if diversity jurisdiction exists. Whether the parties would want that is a separate question.\n- *Fix:* propose Delaware or Illinois law, or at least a neutral venue. If Fernhollow is more likely to be the plaintiff, the best option is to allow the Disclosing Party to seek injunctive relief in any court of competent jurisdiction. Otherwise, make the venue the defendant's home forum. At minimum, add federal courts in the venue clause.\n\n**4. Residual or retained copies (§8).**\n- The carve-out for backups and \"document retention policies\" is broad. The phrase \"its document retention policies\" lets a party keep material indefinitely by adopting a policy.\n- Retained material stays covered \"for as long as it is retained,\" which helps. But it conflicts with the §7 survival clause, so it is unclear which prevails.\n- *Fix:* limit retention to legal and regulatory requirements and routine backups, with no access or use, and with the protections surviving for as long as the material is retained.\n\n**5. Missing protections for personal data and security.**\n- There is no data protection clause, security standard or breach-notification requirement.\n- For an analytics firm exchanging datasets, this is a significant gap. It could implicate state privacy laws and confidentiality obligations to Fernhollow's own clients.\n- *Fix:* state whether personal data will be exchanged. If it will, require a separate data processing agreement, or add a standard of care (at least reasonable care) and prompt notice of unauthorized access.\n\n## Medium priority\n\n**6. Standard of care is undefined (§2).** \"Strict confidence\" is stated but there is no minimum care standard. Add \"no less than the care used for its own similar information, and no less than reasonable care.\"\n\n**7. Assignment to affiliates without consent (§11).**\n- Either party may assign to an affiliate or a successor on notice only.\n- Fernhollow could end up with a competitor or an unknown party holding its information after an acquisition of Quillbrook.\n- *Fix:* exclude assignment to a competitor of the other party, or give a termination or return right on assignment.\n\n**8. Representatives (§5).**\n- The definition includes affiliates' personnel and \"contractors,\" which is broad and could reach unnamed subcontractors.\n- Obligations must be \"at least as protective,\" but professional advisors bound only by professional duties may not meet that.\n- The Receiving Party is responsible for its Representatives' breaches, which is good.\n- *Fix:* consider restricting contractors, or requiring written agreements for them.\n\n**9. Exclusions burden (§3).**\n- The \"demonstrate by written records\" requirement applies to all four exclusions. That is good for the Disclosing Party but also binds Fernhollow.\n- Exclusions (a) and (d) do not address the case where a party compiles public pieces into a combination that is not itself public. Consider adding language protecting combinations.\n- Exclusion (b), \"known without restriction\", is fine.\n\n**10. Definition of Confidential Information (§1(a)).** The definition is generally good because of its reasonable-person standard. Two small gaps:\n- It does not expressly cover the existence and terms of the discussions.\n- It does not expressly cover derivatives, analyses or notes made from the information. For an analytics business, add data, models, algorithms, methodologies, code and client information to the list.\n\n**11. Remedies (§10).**\n- The clause is mutual and permits injunctive relief without proving actual damages. It does not waive any bond requirement.\n- Each party bearing its own fees means Fernhollow cannot recover fees even if it wins. Consider prevailing-party fees, though this cuts both ways.\n\n## Lower priority and drafting points\n\n**12. Purpose is broad (§1(b)).** It includes \"performance\" of a services relationship, but this is only an NDA for exploratory discussions. If the parties sign a services agreement, this NDA could overlap with or conflict with it. Add a clause saying a later definitive agreement controls over this one, or that the NDA continues to apply to pre-existing disclosures. The §14 entire-agreement clause \"supersedes all prior discussions\" may inadvertently cut off protection for information shared before March 2, 2026. Add language covering disclosures made before the Effective Date if that is intended.\n\n**13. Termination interplay (§7 and §8).** Termination triggers a return/destroy obligation even if the parties are continuing to work together. Clarify.\n\n**14. No export-control, securities or privilege language.** Probably unnecessary here, but add a privilege non-waiver clause if legal materials may be shared.\n\n**15. Notices (§13).** Email notice is allowed, but no email addresses are listed. The signature block gives only \"Chicago, Illinois\" and \"Columbus, Ohio,\" which are not usable notice addresses. Add full street addresses, email addresses and a contact name.\n\n**16. Signature block.** The signature block is blank and should include authorized-signatory details. \"As of the Effective Date\" is also set to March 2, 2026, so confirm the date is correct and that no disclosures occurred before it.\n\n**17. Missing boilerplate.**\n- Add a jury waiver if desired.\n- Add a clause that the Disclosing Party retains ownership of its information.\n- Add a no-reverse-engineering provision for any software or models.\n- Add a clause covering feedback.\n- Add no-solicitation language only if desired. It is not necessary here.\n- Add a statutory whistleblower notice (Defend Trade Secrets Act immunity) if individuals or contractors are bound, because failure to include it can limit certain exemplary damages and fees against individuals.\n\n**18. Severability (§15).** It does not provide for reformation. Consider adding that a court may modify an unenforceable provision to the minimum extent necessary.\n\n## Summary of recommended asks\n1. Change governing law and venue to Illinois or Delaware, or at least make venue neutral, and permit injunctive relief in any competent court.\n2. Add notice and cooperation requirements to compelled disclosure.\n3. Extend or clarify the survival period, especially for client and personal data.\n4. Tighten the retention carve-out.\n5. Add data security and personal data provisions.\n6. Limit assignment to competitors.\n7. Fix the notice addresses and the pre-Effective Date coverage.\n\nI can prepare a redline with proposed replacement language for any of these if you want it. It would also help to know what data Fernhollow expects to share, since that affects how hard to push on points 2, 3 and 5.",
+  "seconds": 22.8,
+  "usage": {
+    "input_tokens": 2692,
+    "output_tokens": 2840,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "reasonably balanced mutual NDA"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "generally good because of its reasonable-person standard. Two small gaps"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Consider adding language protecting combinations"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "The survival and term structure leaves a gap (§7)"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "Purpose is broad (§1(b))"
+    },
+    "6": {
+      "label": "minor",
+      "evidence": "consider restricting contractors, or requiring written agreements for them"
+    },
+    "7": {
+      "label": "serious",
+      "evidence": "Compelled disclosure (§6) is incomplete"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "lets a party keep material indefinitely by adopting a policy"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": "Add no-solicitation language only if desired. It is not necessary here."
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "Consider prevailing-party fees, though this cuts both ways"
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "This favors Quillbrook... Ohio law and exclusive Franklin County state-court venue"
+    },
+    "13": {
+      "label": "minor",
+      "evidence": "Assignment to affiliates without consent (§11)... exclude assignment to a competitor"
+    },
+    "14": {
+      "label": "missing",
+      "evidence": "Add a clause that the Disclosing Party retains ownership of its information"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3314,
+    "output_tokens": 544,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

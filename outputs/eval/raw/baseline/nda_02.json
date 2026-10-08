@@ -1,0 +1,79 @@
+{
+  "file": "nda_02.docx",
+  "company": "Tamsworth Logistics Corp.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Tamsworth Logistics Corp.\n\nOverall this is a reasonably balanced, mutual NDA. There are no fatal defects, but several points need fixing or a conscious decision. I have ordered them by importance to Tamsworth.\n\n## Higher priority\n\n**1. Perpetual confidentiality term (§8).**\nObligations on *all* Confidential Information last forever. As a logistics company, Tamsworth will probably be receiving as much as it discloses (Brightvale's pricing, staffing, and methods), and it will have to track those obligations indefinitely. Perpetual terms can also be challenged as unreasonable for non-trade-secret information. *Suggestion:* a fixed tail of 2-3 years after termination, with trade secrets protected for as long as they remain trade secrets. Note that the term clause also lets either party terminate on 30 days' notice, so the tail is what really matters.\n\n**2. Delaware law and exclusive Wilmington forum (§11.2).**\nNeither party is based in Delaware, so this is a neutral-sounding choice that is in practice inconvenient for Tamsworth (Fort Worth). It would raise the cost of any enforcement or defense. *Suggestion:* Texas law and Tarrant County/N.D. Texas courts, or at least a defendant's-home-forum clause. Also confirm that the Delaware choice does not rest only on Brightvale's LLC status. Fallback: keep Delaware law but make the forum non-exclusive, or the defendant's home forum.\n\n**3. Weak assignment protection (§11.1).**\nEither party may assign to an affiliate or to an acquirer without consent, on notice only. Brightvale could be sold to a Tamsworth competitor, which would then hold Tamsworth's confidential information, including operational and facility security details about its warehouses. *Suggestion:* require consent for assignment to a competitor of the other party, or give a termination/return-of-information right on a change of control.\n\n**4. Broad Representatives definition (§4).**\n- It includes affiliates' personnel and *contractors*, which could cover subcontracted maintenance crews with access to Tamsworth's sites or data.\n- The \"bound by confidentiality obligations at least as protective\" standard does not require the obligations to be in writing, and professional advisors are bound only by professional duties.\n- On the plus side, the Recipient is liable for Representatives' breaches, which protects Tamsworth. Keep that.\n\n*Suggestion:* require written obligations for contractors, and consider limiting affiliates to those actually involved in the Purpose.\n\n**5. Information security and warehouse-specific data are not addressed.**\nMaintenance providers often see security systems, layouts, access codes, customer inventory, and client names. The NDA has no standard-of-care clause (only \"strict confidence\"), no breach-notification duty, and no mention of security-sensitive or customer data. *Suggestion:* add a reasonable-care standard (no less than the Recipient uses for its own information), prompt notice of unauthorized access or disclosure, and a carve-out requiring a separate agreement for personal data or customer data.\n\n## Medium priority\n\n**6. Definition of Confidential Information (§1.1).**\n- The \"reasonable person\" standard with no marking requirement is favorable to a discloser but cuts both ways. It creates uncertainty about what Tamsworth must protect.\n- It covers only \"business, technical, and financial\" information. Operational, security, customer, and personnel information is not clearly included. Add \"operational,\" \"customer,\" and \"security\" information.\n- The definition does not cover the existence and terms of the discussions, or information derived from Confidential Information (notes, analyses). Consider adding both.\n\n**7. Exclusions burden (§5).**\nThe Recipient must demonstrate each exclusion \"by written records.\" This is a high burden for *Tamsworth* as Recipient, especially for exclusion (b) (prior knowledge) and (d). It is also unusual to require records for public availability. *Suggestion:* apply the written-records standard only to (b) and (c). Also, the exclusions should not make combinations of information public merely because individual elements are. Consider whether that matters to you.\n\n**8. Return or destruction (§7).**\n- The Recipient must return *or* destroy, but the choice belongs to the Recipient, not the Discloser. Fine for Tamsworth as Recipient, though it may matter if Tamsworth is the Discloser.\n- It has no carve-outs for legally required retention, routine backups, or advisor files. Strict compliance would be impractical and exposes Tamsworth to technical breach. *Suggestion:* add an archival/backup exception, with continued confidentiality for retained material.\n- Destruction is certified only \"on request.\" Fine.\n- It applies only after a *written request*. No automatic trigger on termination. Consider whether you want one.\n\n**9. Compelled disclosure (§6).**\nReasonable. Cooperation is at the Discloser's expense, which is favorable. Consider adding an exception for routine regulatory examinations that do not target the Discloser, since a logistics company may face regulatory audits (customs, DOT, etc.).\n\n**10. Remedies (§9).**\n- Injunctive relief \"without the necessity of proving actual damages\" is acceptable, but there is no waiver of bond. That is more helpful to a discloser. Because Tamsworth could be either party, it is neutral.\n- Each party bears its own fees. That is a sensible choice, but it also means Tamsworth cannot recover fees for a clear breach by Brightvale. Consider a prevailing-party clause only if you expect to be the discloser more often.\n\n## Lower priority and drafting points\n\n**11. Missing disclaimer of warranty.**\nThe heading of §10 says \"No Warranty,\" but the text contains no warranty disclaimer. Add that Confidential Information is provided \"as is\" without warranty of accuracy or completeness. Without it, Tamsworth has no contractual protection if it relies on, or is blamed for, inaccurate information.\n\n**12. Purpose includes \"performance\" (§1.2).**\n\"Evaluation, negotiation, and performance\" of a services relationship means the NDA is meant to govern ongoing performance, but the Agreement says it is not a services agreement and either party can end it on 30 days' notice. That makes the NDA a poor vehicle for protecting information after a contract is signed. Also, §11.4's entire-agreement clause could conflict with a later services agreement's confidentiality terms. *Suggestion:* state that a definitive agreement's confidentiality provisions supersede this NDA going forward.\n\n**13. No non-solicitation or residuals language.**\nNot necessarily needed. Do not accept a \"residuals\" clause if Brightvale proposes one. Consider a short non-solicit of employees only if Tamsworth is concerned about it.\n\n**14. Notices (§11.3).**\n- Notice addresses are only \"Denver, Colorado\" and \"Fort Worth, Texas.\" These are not usable street or email addresses. Notices could be ineffective or disputed. Fill in full addresses and designated email contacts.\n- Email notice is effective \"with confirmation of receipt,\" and an automated reply could be argued to qualify. Tighten.\n\n**15. Signature block and execution details.**\n- No signatory names, titles, or dates are filled in. Confirm signing authority for each party.\n- Effective Date is January 15, 2026. If anything was disclosed before signing, §11.4 supersedes prior understandings, and the Agreement does not clearly cover pre-Effective-Date disclosures. *Suggestion:* expressly cover information disclosed in connection with the Purpose before the Effective Date.\n\n**16. Minor points.**\n- §2 defines \"Discloser\" and \"Recipient,\" but §1.1 uses them before they are defined. Reorder or cross-reference.\n- §5 refers to \"information that the Recipient can demonstrate\"; add \"Confidential Information\" for clarity.\n- §11.5: consider adding a clause stating that no rights, including privilege, are waived by disclosure of privileged material.\n- No clause on export compliance or on no obligation to disclose. §10 covers part of this, but add an explicit statement that each party decides what it discloses.\n- Add a clause that the Agreement does not restrict either party from dealing with other parties in the same field, to protect Tamsworth's freedom to use other maintenance vendors.\n\n## Summary of recommended asks\n\nMust-have: a time-limited term for non-trade-secret information, a Texas (or neutral/defendant's-home) forum, assignment protection against competitors, a warranty disclaimer, security and breach-notice provisions, and complete notice addresses.\n\nShould-have: a backup/retention exception, a narrower written-records requirement, a broader definition covering operational and security information, written confidentiality for contractors, and coverage for pre-Effective-Date disclosures.\n\nI have not seen the underlying commercial context. If you tell me what Tamsworth expects to disclose (for example, customer data or site security details) and whether it will be mainly a discloser or recipient, I can prioritize further and draft replacement language.",
+  "seconds": 24.2,
+  "usage": {
+    "input_tokens": 2619,
+    "output_tokens": 3023,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "reasonably balanced, mutual NDA"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Medium priority: add operational, customer, security information; cover existence of discussions and derived information"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "written-records burden is high for Tamsworth; apply only to (b) and (c)"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Perpetual confidentiality term (§8) - higher priority; fixed 2-3 year tail"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "Purpose includes \"performance\" ... poor vehicle for protecting information after a contract is signed"
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Broad Representatives definition (§4) - higher priority; contractors, no written obligations"
+    },
+    "7": {
+      "label": "not_flagged",
+      "evidence": "Reasonable. Cooperation is at the Discloser's expense"
+    },
+    "8": {
+      "label": "minor",
+      "evidence": "no carve-outs for legally required retention, routine backups; add archival/backup exception"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "Do not accept a \"residuals\" clause if Brightvale proposes one; not necessarily needed"
+    },
+    "10": {
+      "label": "missing",
+      "evidence": "No non-solicitation or residuals language. Not necessarily needed."
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "no waiver of bond... Tamsworth could be either party, it is neutral; fees point"
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "Delaware law and exclusive Wilmington forum (§11.2) - higher priority, inconvenient for Tamsworth"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Weak assignment protection (§11.1); acquirer could be a competitor"
+    },
+    "14": {
+      "label": "serious",
+      "evidence": "Missing disclaimer of warranty; heading says No Warranty but text has no disclaimer"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3497,
+    "output_tokens": 676,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

@@ -1,0 +1,79 @@
+{
+  "file": "nda_11.docx",
+  "company": "Ashgrove Clinical Partners LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Ashgrove Clinical Partners LLC\n\nAshgrove is a clinical services business and will be sharing payroll data with Copperlane, so it is likely to disclose more sensitive information than it receives. That shapes the priorities below.\n\n## High priority\n\n**1. Marking requirement (§1.1)**\nInformation is protected only if it is \"clearly marked 'Confidential' at the time of disclosure.\" Oral and visual disclosures must be identified as confidential at the time. In a payroll evaluation, much of what Ashgrove shares will be unmarked: employee census files, data room access, emails, and demonstrations. Anything unmarked is unprotected.\n*Fix:* Protect all non-public information that is marked, or that a reasonable person would understand to be confidential given its nature or the circumstances of disclosure. Drop the \"at the time\" requirement for oral disclosures, or allow written confirmation within 30 days. Expressly include the existence and terms of the discussions.\n\n**2. No treatment of personal, employee, or health information**\nPayroll processing involves SSNs, bank details, compensation, and possibly health or benefits data tied to a clinical workforce. The NDA does not address:\n- Personal information, or regulated data (state privacy and breach-notification laws, and possibly HIPAA if any PHI is involved).\n- Security safeguards, or notice of unauthorized access.\n- Whether the data is covered at all if unmarked (see item 1).\n\n*Fix:* Add a data-protection clause with reasonable safeguards, prompt breach notice (for example, within 72 hours), and a statement that personal data is Confidential Information regardless of marking. Real payroll data should ideally wait for a services agreement or data processing agreement. If PHI could be exchanged, a BAA is needed. Consider agreeing that no live personal data is shared during the evaluation.\n\n**3. Term and survival (§8)**\n- The agreement covers only disclosures during the 2 years after the Effective Date, and the obligations last 3 years after expiration or termination. The Purpose includes \"performance\" of a services relationship, but a services agreement would presumably have its own confidentiality terms. Clarify how the two interact. §12.4 (entire agreement) could also be read to conflict with them.\n- Early termination on 30 days' notice stops coverage of future disclosures. This is acceptable, but confirm that information already disclosed stays protected.\n- Only trade secrets get indefinite protection. Employee personal data and other sensitive information should be protected for as long as it is retained, not for a fixed 3 years.\n\n**4. Retention carve-out (§7)**\nThe Recipient need not delete backups or information kept under its \"document retention policies.\" The second part is broad and could swallow the rule, because a party could set a retention policy that keeps everything. Retained information stays protected only \"for as long as it is retained,\" which is good, but the carve-out is still open-ended.\n*Fix:* Limit the carve-out to legal or regulatory requirements and routine backups, and require that retained material not be accessed or used. Also, the 30-day clock is triggered \"after this Agreement expires or is terminated\" even without a request. That is fine, but \"or\" makes the timing ambiguous.\n\n## Medium priority\n\n**5. Representatives limited to employees (§4)**\n\"Representatives\" covers only employees. Ashgrove may need to share information with its own advisors (lawyers, accountants, consultants, financing sources, affiliates, and benefits brokers), and Copperlane may need subcontractors or hosting vendors. As drafted, that would need prior written consent. Employees must also be bound by *written* confidentiality obligations, which may be impractical for the general employee population.\n*Fix:* Expand the definition to include affiliates, officers, directors, contractors, and professional advisors who are bound by written or professional duties of confidentiality. Alternatively, require that they be bound by obligations of confidentiality, whether written or professional. Consider a requirement that Copperlane obtain consent before using subcontractors or offshore processing for Ashgrove data.\n\n**6. Exclusions (§5)**\n- \"Demonstrate by written records\" applies to all four exclusions, including public availability, where it is awkward. It is useful against Copperlane, but it burdens Ashgrove equally as Recipient.\n- Exclusion (a) should not apply to information that is public only because of a breach by anyone, not just the Recipient.\n- Add a carve-out so that personal data is never excluded merely because individual elements are public or independently known. The standard exclusions are not suited to personal information.\n- Exclusion (d) should say \"rightfully received... without breach of any duty owed to the Discloser.\"\n- Consider whether combinations of information should remain protected even if individual elements are public.\n\n**7. Assignment (§12.1)**\nEither party may assign to an affiliate or to an acquirer without consent. Ashgrove could end up with its data in the hands of an unknown party, for example a Copperlane competitor of Ashgrove's other vendors or a company with different security standards.\n*Fix:* Require consent for any assignment, or at least require that the assignee not be a competitor of the other party and assume the obligations in writing. Add a right to terminate on a change of control.\n\n**8. Remedies (§10)**\n- Injunctive relief \"without the necessity of proving actual damages\" is helpful, but there is no waiver of any bond requirement. Add one.\n- \"Each party bears its own attorneys' fees\" favors the party more likely to be in breach. If Ashgrove expects to be the main Discloser, consider a prevailing-party fee clause.\n- The clause says \"may cause irreparable harm,\" which is a weaker acknowledgment than courts like to see. Consider \"would cause.\"\n\n**9. Compelled disclosure (§6)**\n- The Recipient must cooperate \"at the Discloser's expense,\" which is acceptable but should be limited to reasonable out-of-pocket costs.\n- It should address regulatory examinations and routine supervisory requests, where notice may not be possible. This helps Ashgrove if it is audited.\n- Confirm that disclosure under compulsion does not otherwise remove the information's confidential status.\n\n## Lower priority and drafting points\n\n**10. Missing standard provisions**\n- **Standard of care:** §2 says \"strict confidence\" but sets no minimum standard. Add \"no less than reasonable care and at least the care it uses for its own similar information.\"\n- **Unauthorized disclosure notice:** the Recipient should notify the Discloser promptly of any actual or suspected unauthorized use or disclosure.\n- **Whistleblower notice:** if either party has employees, add the Defend Trade Secrets Act immunity notice (18 U.S.C. §1833(b)). Without it, exemplary damages and fees against an employee are lost, which matters if Ashgrove wants to enforce against individuals.\n- **Non-solicitation of employees:** not included. Consider it if Ashgrove is worried about Copperlane recruiting staff it meets during diligence.\n- **Residuals:** §9 correctly refuses a memory exception, which favors Ashgrove. Keep this and resist any request to add a residuals clause.\n- **Securities and privacy compliance, and export controls:** probably not needed here.\n\n**11. Authority and signatory details**\n- The signature blocks lack the addresses and the email addresses for notices. §12.3 says the notice address appears \"below a party's signature,\" but only the city and state are given. Notice by email therefore cannot work. Insert full addresses and an email contact.\n- Confirm the exact legal names and the signatories' authority.\n\n**12. Governing law and venue (§12.2)**\nPennsylvania law and Allegheny County courts favor Ashgrove, so this is fine. Expect Copperlane to push back. Note that \"State of Pennsylvania\" is conventionally \"Commonwealth of Pennsylvania.\" Consider adding a jury-trial waiver and a consent to service of process by notice.\n\n**13. Minor drafting points**\n- §2 and the Recitals define \"Discloser\" and \"Recipient\" only by use. This works, but the definitions appear in §2 after first use in §1.1. Move them into §1.\n- \"Representatives\" is defined in §4 but is used in §§5 and 6 as well. That is fine, but check consistency.\n- §11 \"no obligation\" and §12.4 \"entire agreement\" should clarify that this NDA does not supersede any later services agreement or data processing agreement. Add a precedence clause for later agreements.\n- §12.7 labels the signature blocks and everything following it with the same section number. This is an apparent formatting error and should be cleaned up.\n- The Effective Date of October 1, 2026 should be confirmed. If any information has already been exchanged, add language covering earlier disclosures, because §8 covers only disclosures after the Effective Date.\n\n## Summary\n\nThe structure is balanced and mutual. The most serious problems are the **marking requirement**, the **absence of personal-data protections**, the **narrow Representatives definition**, and the **open-ended retention carve-out and fixed survival period**. These should be fixed before signing. The remaining points are standard negotiating items.\n\nIf you tell me who is expected to disclose more, and whether PHI or live payroll data will be shared before a services contract is signed, I can prepare specific replacement language.",
+  "seconds": 25.7,
+  "usage": {
+    "input_tokens": 2845,
+    "output_tokens": 3080,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "The structure is balanced and mutual."
+    },
+    "2": {
+      "label": "serious",
+      "evidence": "Marking requirement (§1.1)... Anything unmarked is unprotected; listed under High priority"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Exclusions (§5)... Exclusion (a) should not apply to information that is public only because of a breach"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Term and survival (§8)... Employee personal data and other sensitive information should be protected for as long as it is retained, not for a fixed 3 years."
+    },
+    "5": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Representatives limited to employees (§4)... As drafted, that would need prior written consent."
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "It should address regulatory examinations and routine supervisory requests"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "Retention carve-out (§7)... could swallow the rule... the carve-out is still open-ended."
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "§9 correctly refuses a memory exception, which favors Ashgrove."
+    },
+    "10": {
+      "label": "minor",
+      "evidence": "Non-solicitation of employees: not included. Consider it if Ashgrove is worried"
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "there is no waiver of any bond requirement. Add one."
+    },
+    "12": {
+      "label": "not_flagged",
+      "evidence": "Pennsylvania law and Allegheny County courts favor Ashgrove, so this is fine."
+    },
+    "13": {
+      "label": "minor",
+      "evidence": "Require consent for any assignment, or at least require that the assignee not be a competitor"
+    },
+    "14": {
+      "label": "minor",
+      "evidence": "§11 'no obligation' and §12.4 'entire agreement' should clarify that this NDA does not supersede any later services agreement"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3554,
+    "output_tokens": 661,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

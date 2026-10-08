@@ -1,0 +1,182 @@
+{
+  "file": "nda_07.docx",
+  "company": "Lanternfield Media LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "valid": true,
+  "problems": [],
+  "first_attempt_problems": [],
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 2662,
+    "output_tokens": 2730,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 9720
+  },
+  "review": {
+    "source_file": "data/synthetic_ndas/nda_07.docx",
+    "company": "Lanternfield Media LLC",
+    "playbook_version": "Version 1",
+    "model": "claude-sonnet-5-5",
+    "findings": [
+      {
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "status": "escalate",
+        "clause_found": true,
+        "quote": "Lanternfield shall hold all Confidential Information disclosed by Halcyra in strict confidence and shall not disclose it except as permitted by this Agreement.",
+        "section_ref": "2",
+        "rationale": "The NDA is labeled mutual, but the operative confidentiality obligation binds only Lanternfield (the Company), not Halcyra, so it is one-way in effect. This is an escalate trigger.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "status": "escalate",
+        "clause_found": true,
+        "quote": "Information disclosed orally or visually is Confidential Information only if the Disclosing Party summarizes it in writing, marked as confidential, and delivers the summary to the Receiving Party within five (5) days after disclosure.",
+        "section_ref": "1(a)",
+        "rationale": "Written confirmation of oral disclosures is required within five days, fewer than 10 days, which is an escalate trigger; the fallback only addresses short periods that are not below the trigger.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The obligations in this Agreement do not apply to information that the Receiving Party can demonstrate by written records: (a) is or becomes publicly available through no breach of this Agreement by the Receiving Party or its Representatives; (b) was known to the Receiving Party without restriction before disclosure by the Disclosing Party; (c) is independently developed by the Receiving Party without use of or reference to the Disclosing Party’s Confidential Information; or (d) is rightfully received by the Receiving Party from a third party without a duty of confidentiality.",
+        "section_ref": "3",
+        "rationale": "All four standard exclusions are present, the Receiving Party bears the burden, and written records are acceptable. No escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "This Agreement covers Confidential Information disclosed during the two (2) years following the Effective Date. Either party may terminate this Agreement earlier on thirty (30) days’ written notice to the other party. The Receiving Party’s obligations under this Agreement survive for three (3) years after expiration or termination, and obligations with respect to trade secrets survive for as long as the information remains a trade secret under applicable law.",
+        "section_ref": "6",
+        "rationale": "Two-year term, early termination right, three-year survival and trade secret carve-out match the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party shall use the Disclosing Party’s Confidential Information solely for the Purpose and for no other purpose.",
+        "section_ref": "4",
+        "rationale": "Use is limited to the Purpose, which is defined in Section 1(b) as the services relationship. Matches the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party may disclose Confidential Information to its and its affiliates’ employees, officers, directors, contractors, and professional advisors (including legal, accounting, and financial advisors) who need to know it for the Purpose and who are bound by confidentiality obligations at least as protective as those in this Agreement (collectively, “Representatives”).",
+        "section_ref": "5",
+        "rationale": "Covers affiliates, contractors and advisors with need-to-know and equal confidentiality, and the Receiving Party is responsible for Representatives' breaches. Matches the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "status": "escalate",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "No clause addresses compelled disclosure; the If absent rule says escalate. The clause is missing.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Within thirty (30) days after the Disclosing Party’s written request, or after this Agreement expires or is terminated, the Receiving Party shall return or destroy all of the Disclosing Party’s Confidential Information in its possession and, on request, certify the destruction in writing.",
+        "section_ref": "7",
+        "rationale": "30-day return or destruction, certification on request, and a backup and legal-retention carve-out with continued confidentiality all match the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "status": "absent",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "No residuals clause appears in the NDA, which is the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "status": "absent",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "No non-compete, exclusivity, or non-solicitation obligations appear anywhere in the NDA, which is the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Each party acknowledges that unauthorized use or disclosure of the other party’s Confidential Information may cause irreparable harm for which monetary damages would be an inadequate remedy.",
+        "section_ref": "9",
+        "rationale": "Mutual irreparable harm acknowledgment, equitable relief without proving damages, and each party bears its own fees. No escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "status": "escalate",
+        "clause_found": true,
+        "quote": "Any dispute arising out of or relating to this Agreement shall be resolved exclusively by binding arbitration administered in Chicago, Illinois under the commercial arbitration rules then in effect, and judgment on the award may be entered in any court having jurisdiction.",
+        "section_ref": "11",
+        "rationale": "Disputes must go to binding arbitration, which is an escalate trigger. Delaware law with a Chicago arbitration seat also points to different places.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Neither party may assign this Agreement without the other party’s prior written consent, except that either party may assign this Agreement without consent to an affiliate or to a successor in connection with a merger, acquisition, or sale of all or substantially all of its assets, on written notice to the other party.",
+        "section_ref": "10",
+        "rationale": "Mutual consent requirement with affiliate and successor exceptions on notice, and the agreement binds permitted successors. Matches the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "No license under any patent, copyright, trade secret, or other intellectual property right is granted or implied by this Agreement or by any disclosure under it.",
+        "section_ref": "8",
+        "rationale": "Section 8 states no license, as-is with no warranty, and no obligation to proceed, with no escalate trigger.",
+        "proposed_language": "",
+        "confidence": "high"
+      }
+    ]
+  },
+  "raw_reply": null,
+  "memo": "# NDA review memo: nda_07.docx\n\nReviewed 2026-10-08 against the mutual NDA playbook (Version 1) for Lanternfield Media LLC, model `claude-sonnet-5-5`.\n\n**4 escalate, 0 fallback, 8 acceptable, 2 absent.**\n\n| # | Topic | Severity | Status | Section | Confidence |\n|---|---|---|---|---|---|\n| 1 | Mutuality | high | ESCALATE | 2 | high |\n| 7 | Compelled disclosure | high | ESCALATE | missing | high |\n| 2 | Definition of Confidential Information | medium | ESCALATE | 1(a) | high |\n| 12 | Governing law and venue | low | ESCALATE | 11 | high |\n| 3 | Standard exclusions | high | acceptable | 3 | high |\n| 4 | Term of the agreement and survival of obligations | medium | acceptable | 6 | high |\n| 5 | Permitted use (purpose limitation) | medium | acceptable | 4 | high |\n| 6 | Permitted disclosure to representatives | medium | acceptable | 5 | high |\n| 8 | Return or destruction of materials | medium | acceptable | 7 | high |\n| 11 | Remedies and injunctive relief | medium | acceptable | 9 | high |\n| 13 | Assignment and change of control | low | acceptable | 10 | high |\n| 14 | No license, no warranty, no obligation to proceed | low | acceptable | 8 | high |\n| 9 | Residuals clause | high | absent | missing | high |\n| 10 | Non-solicitation or non-compete language | high | absent | missing | high |\n\n## Escalations (a lawyer decides)\n\n**1. Mutuality** (section 2). The NDA is labeled mutual, but the operative confidentiality obligation binds only Lanternfield (the Company), not Halcyra, so it is one-way in effect. This is an escalate trigger.\n> Lanternfield shall hold all Confidential Information disclosed by Halcyra in strict confidence and shall not disclose it except as permitted by this Agreement.\n\n**7. Compelled disclosure** (clause missing). No clause addresses compelled disclosure; the If absent rule says escalate. The clause is missing.\n\n**2. Definition of Confidential Information** (section 1(a)). Written confirmation of oral disclosures is required within five days, fewer than 10 days, which is an escalate trigger; the fallback only addresses short periods that are not below the trigger.\n> Information disclosed orally or visually is Confidential Information only if the Disclosing Party summarizes it in writing, marked as confidential, and delivers the summary to the Receiving Party within five (5) days after disclosure.\n\n**12. Governing law and venue** (section 11). Disputes must go to binding arbitration, which is an escalate trigger. Delaware law with a Chicago arbitration seat also points to different places.\n> Any dispute arising out of or relating to this Agreement shall be resolved exclusively by binding arbitration administered in Chicago, Illinois under the commercial arbitration rules then in effect, and judgment on the award may be entered in any court having jurisdiction.\n\n## Acceptable or absent\n\n- **3. Standard exclusions** (section 3): All four standard exclusions are present, the Receiving Party bears the burden, and written records are acceptable. No escalate trigger applies.\n- **4. Term of the agreement and survival of obligations** (section 6): Two-year term, early termination right, three-year survival and trade secret carve-out match the Preferred position.\n- **5. Permitted use (purpose limitation)** (section 4): Use is limited to the Purpose, which is defined in Section 1(b) as the services relationship. Matches the Preferred position.\n- **6. Permitted disclosure to representatives** (section 5): Covers affiliates, contractors and advisors with need-to-know and equal confidentiality, and the Receiving Party is responsible for Representatives' breaches. Matches the Preferred position.\n- **8. Return or destruction of materials** (section 7): 30-day return or destruction, certification on request, and a backup and legal-retention carve-out with continued confidentiality all match the Preferred position.\n- **11. Remedies and injunctive relief** (section 9): Mutual irreparable harm acknowledgment, equitable relief without proving damages, and each party bears its own fees. No escalate trigger applies.\n- **13. Assignment and change of control** (section 10): Mutual consent requirement with affiliate and successor exceptions on notice, and the agreement binds permitted successors. Matches the Preferred position.\n- **14. No license, no warranty, no obligation to proceed** (section 8): Section 8 states no license, as-is with no warranty, and no obligation to proceed, with no escalate trigger.\n- **9. Residuals clause** (no clause): No residuals clause appears in the NDA, which is the Preferred position.\n- **10. Non-solicitation or non-compete language** (no clause): No non-compete, exclusivity, or non-solicitation obligations appear anywhere in the NDA, which is the Preferred position.\n\n---\n\n*This memo is a first-pass review generated with an AI tool against a written playbook. It is not legal advice. A lawyer must review the NDA and this memo before anyone relies on either.*\n",
+  "seconds": 13.4,
+  "run": 1
+}

@@ -1,0 +1,79 @@
+{
+  "file": "nda_12.docx",
+  "company": "Rookhaven Hospitality Group LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review: Rookhaven Hospitality Group LLC (Recipient/Discloser perspective)\n\nOverall this is a reasonably balanced, mutual NDA. There are no fatal defects, but several points should be fixed or negotiated. They are ordered by importance.\n\n## Significant issues\n\n**1. Term and survival (§8) is internally unclear and short for a hospitality company.**\n- The agreement covers information disclosed during 3 years, but protection lasts only 2 years after expiration or termination. Early disclosures could lose protection well before the 3-year window closes, since \"expiration or termination\" is ambiguous as to timing.\n- Rookhaven will likely share pricing, volumes, property-level operating data, guest-related data, and vendor terms. Two years is short for this material.\n- Only \"trade secrets\" get extended protection. Confidential information that is not a trade secret, such as guest or employee data, has no tail.\n- *Fix:* Provide a fixed tail (e.g., 3-5 years) and an indefinite obligation for trade secrets and personal data.\n\n**2. No carve-out or protection for personal data (guest and employee).**\n- The NDA does not address personal information. If Rookhaven shares anything touching guests or staff (e.g., property-level data), privacy laws such as the CCPA and Nevada privacy statutes may apply. This agreement is not a data processing agreement.\n- *Fix:* State that no personal information is to be shared absent a separate data protection agreement, or add minimum safeguards and breach notification.\n\n**3. Delaware governing law and exclusive Wilmington venue (§10).**\n- Neither party is in Delaware, so this is neutral in appearance but costly and inconvenient for a Reno-based company, especially combined with the fee-shifting clause in §9.\n- *Fix:* Prefer Nevada law and Washoe County/Reno courts, or at least a neutral compromise with non-exclusive venue for injunctive relief. Delaware's courts are also not required for any practical reason here.\n\n**4. Prevailing-party attorneys' fees (§9).**\n- This raises litigation risk for both sides. It is mutual, but it increases exposure if there is a good-faith dispute over what counts as confidential, which the \"reasonable person\" standard in §2 makes more likely.\n- *Fix:* Delete it, or limit it to a court finding of willful breach.\n\n**5. Return/destruction (§7) is weakened by broad retention exceptions.**\n- The exception for \"document retention policies\" is open-ended and lets the recipient keep anything it chooses to retain under its own policy. Retained information stays protected only \"for as long as it is retained,\" which is helpful, but it conflicts with the §8 sunset, so it is unclear which governs.\n- Also, the destruction trigger is \"after this Agreement expires or is terminated\" with no clear start date for the 30 days.\n- *Fix:* Limit retention to legal/regulatory requirements and routine backups, require that retained copies not be accessed, and clarify that §7 retention overrides the §8 sunset.\n\n## Moderate issues\n\n**6. Exclusions (§3) require proof \"by written records.\"** This applies to both parties, but as a likely recipient of vendor information, Rookhaven may find the burden onerous. Also, there is no residuals-type language (probably fine for Rookhaven as a customer). Consider softening to \"competent evidence.\"\n\n**7. Assignment (§11) allows assignment to affiliates or successors without consent.** Rookhaven's information could end up with an unknown competitor of a hospitality operator (for example, if Saltmeadow is acquired by a company that services Rookhaven's competitors). Notice only is weak.\n- *Fix:* Require consent for assignment to a competitor of the other party, or give a termination right and return/destroy obligation on change of control.\n\n**8. Representatives (§5) include affiliates' personnel and contractors.** Rookhaven's affiliates (other properties and management entities) benefit from this, but Saltmeadow's contractors and affiliates could receive Rookhaven data. Requirement that they be \"bound by confidentiality obligations\" does not specify written obligations. The recipient is responsible for their breaches, which is good.\n- *Fix:* Require written obligations for contractors and, if desired, prior notice of the identity of any subcontractors (e.g., delivery or laundering subcontractors).\n\n**9. Compelled disclosure (§6).** The discloser bears cooperation costs (\"at the Disclosing Party's expense\"), which is reasonable, but there is no carve-out for routine regulatory examinations. Rookhaven, as a likely gaming/hospitality licensee in Nevada, may face regulator requests (e.g., Gaming Control Board) where notice may be impractical or prohibited.\n- *Fix:* Add a carve-out permitting disclosure to regulators in routine examinations without notice, if Rookhaven holds or is affiliated with a gaming license.\n\n**10. Purpose (§4) covers \"performing\" a services relationship.** This blurs an NDA with a master services agreement. After a deal is signed, the NDA terms may conflict with the services agreement.\n- *Fix:* Limit to \"evaluating and negotiating,\" and state that a definitive agreement will supersede this NDA for information shared thereafter.\n\n## Minor / drafting points\n\n11. **§1 and the preamble are circular and vague.** \"Purpose\" is used in §1 before it is defined in §4. The preamble also says the parties \"will share\" information, which is informal.\n12. **§2 \"marked or identified\" vs. \"reasonable person\" test.** The test is two-pronged and generous, which is good for a discloser but increases ambiguity. Consider confirming in writing within 30 days for oral disclosures, or accept the current approach for Rookhaven's benefit.\n13. **§8 termination.** Termination on 30 days' notice is fine, but state that termination does not affect information already disclosed.\n14. **§9 remedies.** \"Without the necessity of proving actual damages\" and no bond waiver. Consider whether to add \"without posting a bond\" if Rookhaven is more likely to be the discloser.\n15. **§12 \"No obligation.\"** Add a statement that neither party is restricted from dealing with other vendors or customers, to avoid claims of exclusivity.\n16. **§13 Notices.** Notice addresses are only city names (\"Sacramento, California\" and \"Reno, Nevada\"). These are inadequate for delivery. Add street addresses, attention lines, and email addresses.\n17. **Signature block.** Names, titles, and dates are blank. Confirm the signatory has authority for Rookhaven. The Effective Date is stated as May 18, 2026, but signing dates may differ, so confirm which date applies.\n18. **Missing provisions to consider:**\n    - No express statement that the information remains the discloser's property.\n    - No obligation to notify the other party of unauthorized disclosure or loss.\n    - No standard of care (e.g., at least reasonable care, and no less than the recipient uses for its own information).\n    - No export-control or securities-law language (probably unnecessary here).\n    - No clause on defend trade secrets act whistleblower immunity notice (relevant only if individuals/contractors are bound).\n19. **§14 Entire agreement.** It supersedes \"all prior discussions\" about the subject matter, which could extinguish protection for information already exchanged before May 18. Either backdate coverage to cover earlier disclosures or confirm that none have occurred.\n\n## Recommended priorities\n1. Fix venue/governing law and fees (§§9-10).\n2. Extend the tail and add a personal-data carve-out (§8).\n3. Tighten assignment and subcontractor controls (§§5, 11).\n4. Narrow retention and align with the sunset (§§7-8).\n5. Complete notice addresses and signature details (§§13, 17), and cover earlier disclosures (§14).\n\nI can prepare a redline of the proposed changes if you wish. Please also confirm whether Rookhaven is likely to be primarily the discloser or the recipient, and whether it holds any gaming license, since these facts affect several of the recommendations.",
+  "seconds": 21.9,
+  "usage": {
+    "input_tokens": 2592,
+    "output_tokens": 2706,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "reasonably balanced, mutual NDA"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "test is two-pronged and generous... Consider confirming in writing within 30 days for oral disclosures"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Exclusions (§3) require proof \"by written records.\"... Consider softening to \"competent evidence.\""
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Term and survival (§8) is internally unclear and short for a hospitality company"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "Purpose (§4) covers \"performing\" a services relationship... Limit to \"evaluating and negotiating,\""
+    },
+    "6": {
+      "label": "minor",
+      "evidence": "Representatives (§5) include affiliates' personnel and contractors... Require written obligations for contractors"
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "Compelled disclosure (§6)... no carve-out for routine regulatory examinations"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "Return/destruction (§7) is weakened by broad retention exceptions"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "no residuals-type language (probably fine for Rookhaven as a customer)"
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "§9 remedies... Consider whether to add \"without posting a bond\""
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "Delaware governing law and exclusive Wilmington venue (§10)... costly and inconvenient"
+    },
+    "13": {
+      "label": "minor",
+      "evidence": "Assignment (§11) allows assignment to affiliates or successors without consent"
+    },
+    "14": {
+      "label": "minor",
+      "evidence": "§12 \"No obligation.\" Add a statement that neither party is restricted from dealing with other vendors"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3180,
+    "output_tokens": 629,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

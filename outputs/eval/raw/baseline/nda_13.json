@@ -1,0 +1,79 @@
+{
+  "file": "nda_13.docx",
+  "company": "Mistral Point Engineering Inc.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Mistral Point Engineering Inc.\n\nThe agreement is mostly balanced and workable, but several provisions hurt Mistral Point or create risk. They are listed below by priority.\n\n## Significant problems\n\n**1. Section 11 (Remedies) is one-sided in Larkspur's favor.**\n- Only Larkspur's Confidential Information is covered by the irreparable-harm acknowledgment, and only Larkspur may seek injunctive relief. This contradicts the \"mutual\" framing and Section 2's statement that obligations \"apply equally.\"\n- Mistral Point would have to prove irreparable harm from scratch if Larkspur misused its information.\n- **Fix:** Make it mutual (\"either Disclosing Party may seek...\").\n- The \"each party bears its own fees\" clause also removes any fee recovery for the party that wins an enforcement action. Consider a prevailing-party clause, or at least confirm you are comfortable with this.\n\n**2. Section 7 (Term and Survival) has a short tail and an ambiguous structure.**\n- Obligations survive only 18 months after expiration or termination. With a 2-year disclosure window, information disclosed on day one could be unprotected after about 3.5 years, and information disclosed late gets only 18 months.\n- A fixed expiry gives no lasting protection to trade secrets, such as proprietary survey methods, pricing, and client data. Mistral Point's engineering data and client information will likely stay sensitive longer.\n- **Fix:** Add that trade secrets are protected for as long as they remain trade secrets, and consider a longer tail of 3 to 5 years for other information.\n- Termination on 30 days' notice lets either party cut off coverage of future disclosures. Make clear that information already disclosed stays protected.\n- The phrase \"obligations survive\" is ambiguous: does it cover only the confidentiality and use obligations, or also return/destruction and liability for Representatives?\n\n**3. Section 8 (Return or Destruction) has a broad retention carve-out.**\n- The Receiving Party may keep information under \"its document retention policies.\" That lets a party avoid return or destruction simply by adopting a policy.\n- The statement that retained information stays subject to the Agreement \"for as long as it is retained\" helps. But Section 7's 18-month survival cap could contradict it. Clarify that retained information stays protected indefinitely, or at least beyond the cap.\n- **Fix:** Limit the carve-out to automatic backups and legally required retention, not internal policy. Add that retained copies may not be accessed or used.\n- The trigger \"or after this Agreement expires\" is unclear. Return could be due before the Purpose is complete.\n\n**4. Section 12 (Assignment) allows assignment to affiliates or successors without consent.**\n- Larkspur could assign to a competitor of Mistral Point through an acquisition, and Mistral Point's confidential information would go with it. Notice comes only after the fact (\"on written notice\"), and there is no right to object or terminate.\n- **Fix:** Require consent, or at least allow Mistral Point to terminate and demand return of its information if the successor is a competitor.\n\n## Moderate problems\n\n**5. Section 3 (Exclusions) imposes a \"written records\" burden on the Receiving Party for all exclusions.**\n- This is favorable to a Disclosing Party. Mistral Point will be a Receiving Party as well as a Disclosing Party, so this cuts both ways. For exclusion (a) (public information), requiring written records is odd and burdensome.\n- There is also no carve-out preventing a party from claiming a combination of public features is public.\n- **Fix:** Consider limiting the written-records requirement to (b) and (c), and add that information is not public merely because individual elements are public.\n\n**6. Section 5 (Representatives) is too broad.**\n- It extends to affiliates' personnel and to \"contractors,\" with no named limit. Mistral Point's information could pass to Larkspur's subcontractors, including surveyors who also work for Mistral Point's competitors.\n- The binding standard is \"confidentiality obligations at least as protective\" and need not be written.\n- **Fix:** Require written obligations, or limit contractors to those approved in advance. The responsibility-for-Representatives clause is good and should stay.\n\n**7. Section 1(a) (Definition) covers unmarked information on a \"reasonable person\" standard.**\n- This favors the Disclosing Party and is generally fine, but it creates uncertainty for Mistral Point as a Receiving Party about what is protected.\n- Consider whether you want that burden. Mistral Point's own disclosures of oral information are protected, so the broad definition is probably worth keeping.\n\n**8. Section 6 (Compelled Disclosure) has gaps.**\n- There is no express carve-out allowing disclosure to regulators in routine examinations without notice.\n- If Mistral Point is a regulated engineering firm, or deals with public agencies, check for public records requests (Washington's Public Records Act) where a client is a government body. Larkspur's information might be swept in.\n\n## Drafting and housekeeping issues\n\n**9. Section 9 (Residuals/Memory) is titled \"Information Retained in Memory.\"** It is protective rather than a residuals clause, which is favorable. Confirm that Larkspur does not push back with a standard residuals clause, which would hurt you.\n\n**10. Section 10 (No License).** It lacks an express statement that title remains with the Disclosing Party. It also has no clause on feedback or on freedom to work on similar projects. Consider adding a statement that each party may pursue independent projects, so Larkspur cannot claim contamination, since Mistral Point does geotechnical work and may compete with it.\n\n**11. Section 13 (Governing Law and Venue).** Washington law and King County venue favor Mistral Point (Seattle). Larkspur may push back. This is a point to hold, not change. It lacks a jury waiver and a fee-shifting provision, but neither is essential.\n\n**12. Section 14 (Notices).** Notice addresses are only city names (\"Seattle, Washington\"), not full street or email addresses. This makes notice ineffective, particularly since email delivery is allowed. **Fix:** Add full addresses and email contacts and a named recipient.\n\n**13. Preamble and signature block.**\n- Larkspur is a Delaware LLC with offices in Spokane. Confirm it is registered to do business in Washington and that the entity name is exact.\n- The Effective Date is June 22, 2026, but the signature blocks are blank. Make sure signatories have authority.\n- The \"Date\" lines could produce a signing date different from the Effective Date. If any disclosures occur before signing, the \"entire agreement\" clause and the 2-year window might not cover them. Add language covering information disclosed before the Effective Date.\n\n**14. Section 18 (Relationship).** The signature block is mislabeled as part of Section 18, which is only a numbering issue. \"Independent contractors\" is slightly odd for an NDA, and \"independent parties\" would be more accurate.\n\n**15. Missing provisions to consider.**\n- No **data security standard** (reasonable care, at least equal to the party's own).\n- No **notice of unauthorized disclosure** obligation.\n- No **defend trade secrets (DTSA) whistleblower notice**, which matters only if individuals are bound.\n- No **export control** language, relevant if technical data is shared.\n- No **non-solicitation** or **standstill**. These are probably unnecessary.\n- No **privilege** protection.\n- No express statement that **Mistral Point's client information** (third-party confidential data it holds) is covered or that Larkspur must comply with client restrictions.\n\n## Suggested priorities\n1. Make Section 11 mutual.\n2. Extend the Section 7 survival period, with trade secret protection and clear survival of retained information.\n3. Tighten the Section 12 assignment rights.\n4. Narrow the Section 8 retention carve-out.\n5. Fix the notice addresses and the Section 5 contractor controls.\n\nI haven't seen the business context. If Mistral Point mostly receives information, some of these points (such as the burden of proof in Section 3 and a longer survival period) cut against you, so please tell me who will disclose more.",
+  "seconds": 23.0,
+  "usage": {
+    "input_tokens": 2805,
+    "output_tokens": 2727,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "Review calls the agreement 'mostly balanced'; mutuality framing is cited only as contradicted by the one-sided remedies clause"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Section 1(a) covers unmarked information on a 'reasonable person' standard... generally fine, but creates uncertainty"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Section 3 imposes a 'written records' burden... Moderate problems"
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Section 7 (Term and Survival) has a short tail and an ambiguous structure"
+    },
+    "5": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "6": {
+      "label": "minor",
+      "evidence": "Section 5 (Representatives) is too broad... Moderate problems"
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "Section 6 (Compelled Disclosure) has gaps"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "Section 8 (Return or Destruction) has a broad retention carve-out"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": "protective rather than a residuals clause, which is favorable"
+    },
+    "10": {
+      "label": "not_flagged",
+      "evidence": "No non-solicitation or standstill. These are probably unnecessary."
+    },
+    "11": {
+      "label": "serious",
+      "evidence": "Section 11 (Remedies) is one-sided in Larkspur's favor"
+    },
+    "12": {
+      "label": "not_flagged",
+      "evidence": "Washington law and King County venue favor Mistral Point... a point to hold, not change"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Section 12 (Assignment) allows assignment to affiliates or successors without consent"
+    },
+    "14": {
+      "label": "minor",
+      "evidence": "Section 10 (No License) lacks an express statement that title remains with the Disclosing Party"
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3201,
+    "output_tokens": 643,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

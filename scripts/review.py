@@ -194,7 +194,13 @@ def main(argv=None) -> int:
         print(e)
         return 1
 
-    result = review(args.nda, company, model=s["model"], effort=s["effort"])
+    import anthropic
+
+    try:
+        result = review(args.nda, company, model=s["model"], effort=s["effort"])
+    except anthropic.APIError as e:
+        print(f"API error: {getattr(e, 'message', e)}")
+        return 1
     args.out_dir.mkdir(parents=True, exist_ok=True)
     stem = args.nda.stem
     u = result["usage"]

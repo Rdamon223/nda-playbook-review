@@ -1,0 +1,182 @@
+{
+  "file": "nda_03.docx",
+  "company": "Cobaltine Software Inc.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "valid": true,
+  "problems": [],
+  "first_attempt_problems": [],
+  "attempts": 1,
+  "usage": {
+    "input_tokens": 2591,
+    "output_tokens": 2852,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 9720
+  },
+  "review": {
+    "source_file": "data/synthetic_ndas/nda_03.docx",
+    "company": "Cobaltine Software Inc.",
+    "playbook_version": "Version 1",
+    "model": "claude-sonnet-5-5",
+    "findings": [
+      {
+        "topic_id": 1,
+        "topic_name": "Mutuality",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Each party, when acting as Receiving Party, will hold the other party's Confidential Information in strict confidence, and the obligations in this Agreement apply equally to both parties.",
+        "section_ref": "1",
+        "rationale": "Obligations apply equally to both parties, and no other clause makes the NDA one-way.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 2,
+        "topic_name": "Definition of Confidential Information",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "that is marked or identified as confidential or that a reasonable person would understand to be confidential given the nature of the information and the circumstances of disclosure. Oral and visual disclosures are covered whether or not they are later summarized in writing.",
+        "section_ref": "2",
+        "rationale": "The definition covers non-public business, technical, and financial information in any form, uses a reasonable-person standard, and covers oral disclosures with no written summary requirement. It has no carve-outs.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 3,
+        "topic_name": "Standard exclusions",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The obligations in this Agreement do not apply to information that the Receiving Party can demonstrate by written records: (a) is or becomes publicly available through no breach of this Agreement by the Receiving Party or its Representatives;",
+        "section_ref": "3",
+        "rationale": "All four standard exclusions are present, the Receiving Party bears the burden with written records, and public availability excludes breach. Independent development requires no use of Confidential Information.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 4,
+        "topic_name": "Term of the agreement and survival of obligations",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "This Agreement covers Confidential Information disclosed during the one (1) year following the Effective Date. Either party may terminate this Agreement earlier on thirty (30) days' written notice to the other party. The Receiving Party's obligations under this Agreement survive for two (2) years after expiration or termination, and obligations with respect to trade secrets survive for as long as the information remains a trade secret under applicable law.",
+        "section_ref": "8",
+        "rationale": "One-year term, mutual early termination, two-year survival, and trade secrets protected for as long as they remain trade secrets. This meets the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 5,
+        "topic_name": "Permitted use (purpose limitation)",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party will use the Disclosing Party's Confidential Information solely for the purpose of evaluating, negotiating, and performing a potential services relationship between the parties concerning software implementation consulting services (the \"Purpose\") and for no other purpose.",
+        "section_ref": "4",
+        "rationale": "Use is limited to a specific defined Purpose tied to the services relationship.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 6,
+        "topic_name": "Permitted disclosure to representatives",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The Receiving Party may disclose Confidential Information to its and its affiliates' employees, officers, directors, contractors, and professional advisors (including legal, accounting, and financial advisors) who need to know it for the Purpose and who are bound by confidentiality obligations at least as protective as those in this Agreement (collectively, \"Representatives\").",
+        "section_ref": "5",
+        "rationale": "Covers affiliates, contractors, and advisors on a need-to-know basis with equivalent confidentiality obligations, and the Receiving Party is responsible for Representatives' breaches.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 7,
+        "topic_name": "Compelled disclosure",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "the Receiving Party will, to the extent legally permitted, give the Disclosing Party prompt written notice so that the Disclosing Party may seek a protective order or other remedy, reasonably cooperate with those efforts at the Disclosing Party's expense, and disclose only the portion of the Confidential Information that it is legally required to disclose.",
+        "section_ref": "6",
+        "rationale": "Includes notice where legally permitted, cooperation at the Disclosing Party's expense, and a limit to the required portion. No Escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 8,
+        "topic_name": "Return or destruction of materials",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Within thirty (30) days after the Disclosing Party's written request, or after this Agreement expires or is terminated, the Receiving Party will return or destroy all of the Disclosing Party's Confidential Information in its possession and, on request, certify the destruction in writing.",
+        "section_ref": "7",
+        "rationale": "A 30-day return or destruction period with certification on request. Section 7 also has the backup and legal-retention carve-out, and retained information stays confidential.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 9,
+        "topic_name": "Residuals clause",
+        "status": "absent",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "No residuals clause appears anywhere in the NDA. Absence is the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 10,
+        "topic_name": "Non-solicitation or non-compete language",
+        "status": "absent",
+        "clause_found": false,
+        "quote": "",
+        "section_ref": "",
+        "rationale": "The NDA contains no non-compete, exclusivity, or non-solicitation obligations. Absence is the Preferred position.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 11,
+        "topic_name": "Remedies and injunctive relief",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "The non-breaching party may therefore seek injunctive or other equitable relief, without the necessity of proving actual damages, in addition to any other remedy available at law or in equity. In any action to enforce this Agreement, the prevailing party is entitled to recover its reasonable attorneys' fees and costs.",
+        "section_ref": "9",
+        "rationale": "Mutual equitable relief without proof of actual damages, and prevailing-party fees in either direction. There are no liquidated damages or indemnities.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 12,
+        "topic_name": "Governing law and venue",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "This Agreement is governed by the laws of the State of New York, without regard to its conflict of laws principles. Each party submits to the exclusive jurisdiction of the state and federal courts located in New York County, New York for any action arising out of this Agreement.",
+        "section_ref": "10",
+        "rationale": "New York law with exclusive New York venue matches the Preferred position, and law and venue are consistent.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 13,
+        "topic_name": "Assignment and change of control",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "Neither party may assign this Agreement without the other party's prior written consent, except that either party may assign this Agreement without consent to an affiliate or to a successor in connection with a merger, acquisition, or sale of all or substantially all of its assets, on written notice to the other party.",
+        "section_ref": "11",
+        "rationale": "Mutual consent requirement with exceptions for affiliates and successors on written notice, and the agreement binds permitted successors. No Escalate trigger applies.",
+        "proposed_language": "",
+        "confidence": "high"
+      },
+      {
+        "topic_id": 14,
+        "topic_name": "No license, no warranty, no obligation to proceed",
+        "status": "acceptable",
+        "clause_found": true,
+        "quote": "No license under any patent, copyright, trade secret, or other intellectual property right is granted or implied by this Agreement or by any disclosure under it. All Confidential Information is provided \"as is\", and neither party makes any warranty, express or implied, as to its accuracy or completeness.",
+        "section_ref": "12",
+        "rationale": "No license, an as-is disclaimer, and no obligation to proceed (in the same section) are all present and mutual. No feedback or exclusivity terms appear.",
+        "proposed_language": "",
+        "confidence": "high"
+      }
+    ]
+  },
+  "raw_reply": null,
+  "memo": "# NDA review memo: nda_03.docx\n\nReviewed 2026-10-08 against the mutual NDA playbook (Version 1) for Cobaltine Software Inc., model `claude-sonnet-5-5`.\n\n**0 escalate, 0 fallback, 12 acceptable, 2 absent.**\n\n| # | Topic | Severity | Status | Section | Confidence |\n|---|---|---|---|---|---|\n| 1 | Mutuality | high | acceptable | 1 | high |\n| 3 | Standard exclusions | high | acceptable | 3 | high |\n| 7 | Compelled disclosure | high | acceptable | 6 | high |\n| 2 | Definition of Confidential Information | medium | acceptable | 2 | high |\n| 4 | Term of the agreement and survival of obligations | medium | acceptable | 8 | high |\n| 5 | Permitted use (purpose limitation) | medium | acceptable | 4 | high |\n| 6 | Permitted disclosure to representatives | medium | acceptable | 5 | high |\n| 8 | Return or destruction of materials | medium | acceptable | 7 | high |\n| 11 | Remedies and injunctive relief | medium | acceptable | 9 | high |\n| 12 | Governing law and venue | low | acceptable | 10 | high |\n| 13 | Assignment and change of control | low | acceptable | 11 | high |\n| 14 | No license, no warranty, no obligation to proceed | low | acceptable | 12 | high |\n| 9 | Residuals clause | high | absent | missing | high |\n| 10 | Non-solicitation or non-compete language | high | absent | missing | high |\n\n## Acceptable or absent\n\n- **1. Mutuality** (section 1): Obligations apply equally to both parties, and no other clause makes the NDA one-way.\n- **3. Standard exclusions** (section 3): All four standard exclusions are present, the Receiving Party bears the burden with written records, and public availability excludes breach. Independent development requires no use of Confidential Information.\n- **7. Compelled disclosure** (section 6): Includes notice where legally permitted, cooperation at the Disclosing Party's expense, and a limit to the required portion. No Escalate trigger applies.\n- **2. Definition of Confidential Information** (section 2): The definition covers non-public business, technical, and financial information in any form, uses a reasonable-person standard, and covers oral disclosures with no written summary requirement. It has no carve-outs.\n- **4. Term of the agreement and survival of obligations** (section 8): One-year term, mutual early termination, two-year survival, and trade secrets protected for as long as they remain trade secrets. This meets the Preferred position.\n- **5. Permitted use (purpose limitation)** (section 4): Use is limited to a specific defined Purpose tied to the services relationship.\n- **6. Permitted disclosure to representatives** (section 5): Covers affiliates, contractors, and advisors on a need-to-know basis with equivalent confidentiality obligations, and the Receiving Party is responsible for Representatives' breaches.\n- **8. Return or destruction of materials** (section 7): A 30-day return or destruction period with certification on request. Section 7 also has the backup and legal-retention carve-out, and retained information stays confidential.\n- **11. Remedies and injunctive relief** (section 9): Mutual equitable relief without proof of actual damages, and prevailing-party fees in either direction. There are no liquidated damages or indemnities.\n- **12. Governing law and venue** (section 10): New York law with exclusive New York venue matches the Preferred position, and law and venue are consistent.\n- **13. Assignment and change of control** (section 11): Mutual consent requirement with exceptions for affiliates and successors on written notice, and the agreement binds permitted successors. No Escalate trigger applies.\n- **14. No license, no warranty, no obligation to proceed** (section 12): No license, an as-is disclaimer, and no obligation to proceed (in the same section) are all present and mutual. No feedback or exclusivity terms appear.\n- **9. Residuals clause** (no clause): No residuals clause appears anywhere in the NDA. Absence is the Preferred position.\n- **10. Non-solicitation or non-compete language** (no clause): The NDA contains no non-compete, exclusivity, or non-solicitation obligations. Absence is the Preferred position.\n\n---\n\n*This memo is a first-pass review generated with an AI tool against a written playbook. It is not legal advice. A lawyer must review the NDA and this memo before anyone relies on either.*\n",
+  "seconds": 13.9,
+  "run": 3
+}

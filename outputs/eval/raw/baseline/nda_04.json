@@ -1,0 +1,79 @@
+{
+  "file": "nda_04.docx",
+  "company": "Oakhaven Data Services Inc.",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review for Oakhaven Data Services Inc.\n\nThe NDA is styled as mutual, but several provisions tilt toward Pellucid or create risk for Oakhaven as a hosting provider. Issues are listed in rough priority order.\n\n## High priority\n\n**1. One-sided attorneys' fees (§11).** Only Pellucid can recover fees from Oakhaven, even though the rest of the agreement is mutual. Oakhaven would pay if it loses and bear its own costs if it wins.\n- *Fix:* Make it mutual (prevailing party), or delete it.\n\n**2. Non-solicit/no-accept clause (§9).** This is the most substantive problem.\n- It bars a party from *accepting* business, not just soliciting. That is effectively a non-compete. Any customer or supplier of Pellucid that Oakhaven learns of through Confidential Information is off limits, even if the customer approaches Oakhaven.\n- It lasts the term plus 24 months, which can reach 4+ years. That is longer than the confidentiality tail.\n- \"Identified to it through\" Confidential Information is vague. It also has no carve-out for existing relationships, general marketing, or independent contact. The §3 exclusions arguably apply, but §9 does not clearly cross-reference them.\n- A cloud host likely serves many customers in the robotics and manufacturing sectors, so the risk of inadvertent breach is real. It may also raise antitrust and enforceability concerns.\n- *Fix:* Delete it. Otherwise limit it to active solicitation, exclude existing and prospective customers and general solicitations, shorten the period, and cross-reference the exclusions.\n\n**3. No residual-data and hosting-specific protections.** The NDA does not contemplate Oakhaven holding Pellucid's data. If Pellucid will share production data, source code, or personal information, this NDA is the wrong vehicle.\n- It has no data-security standard and no carve-out for personal data.\n- *Fix:* Add a statement that no customer or production data is to be shared under the NDA, and that any such data is governed by a separate hosting agreement and DPA.\n\n**4. Delaware exclusive venue in Wilmington (§13).** Neither party is based in Delaware, though Oakhaven is incorporated there. The forum is inconvenient for both and adds cost. Michigan, as Pellucid's home, would be worse for Oakhaven.\n- *Fix:* Consider a neutral or defendant's-home forum, or at least non-exclusive jurisdiction for injunctive relief. Also add a jury waiver if desired. Confirm the Delaware choice is acceptable, since it is likely a fair compromise.\n\n## Medium priority\n\n**5. Assignment on change of control (§12).** Consent is required for a merger or change of control. That restricts Oakhaven's M&A flexibility, since an acquisition could breach the NDA.\n- *Fix:* Permit assignment to an affiliate or a successor to all or substantially all of the business, with notice.\n\n**6. Survival and term (§7).**\n- The 3-year tail from expiration or termination, plus a 2-year disclosure window, means up to 5 years of obligations. That is fine for a mutual NDA, but it is a burden if Oakhaven receives more than it discloses.\n- Termination on 30 days' notice does not stop the §9 tail.\n- The trade-secret survival is open-ended. That is customary, but note that the carve-out is limited to trade secrets and does not cover other categories, such as technical data.\n- *Fix:* Consider a shorter tail, or confirm it is acceptable.\n\n**7. Return/destruction (§8).**\n- The trigger \"after this Agreement expires or is terminated\" lacks a request requirement, so Oakhaven would have to proactively return or destroy everything. The \"or\" wording is ambiguous.\n- The backup and retention carve-out is good for Oakhaven, but the retained information is subject to the Agreement \"for as long as it is retained.\" That is indefinite and exceeds the survival period.\n- Certification is only \"on request,\" which is fine.\n- *Fix:* Clarify the trigger, and align the retained-information obligations with the survival period, or make them perpetual only for trade secrets.\n\n**8. Burden of proof on exclusions (§3).** The Receiving Party must \"demonstrate by written records\" every exclusion. That is stricter than usual, and it is particularly hard for prior knowledge and independent development.\n- *Fix:* Require demonstration by \"competent evidence\" or drop the written-records requirement.\n\n**9. Representatives definition (§5).**\n- It includes contractors and affiliates, which helps Oakhaven (subcontractors, data center operators), but it also makes Oakhaven strictly liable for all of them.\n- Representatives must be \"bound by confidentiality obligations at least as protective.\" Professional advisors are bound by duty, not always by written agreement, so the wording should accommodate that.\n- *Fix:* Clarify that professional duties of confidentiality suffice. Consider limiting liability to cases where Oakhaven failed to cause compliance.\n\n## Lower priority\n\n**10. Definition of Confidential Information (§1(a)).** It combines a marking requirement with a \"reasonable person\" standard. That is workable, but it is broad and creates ambiguity. It does not cover the *existence and terms of discussions*, and it does not expressly cover information of third parties or information derived from Confidential Information (notes, analyses).\n- *Fix:* Decide which side Oakhaven is more likely to be on and tune accordingly. Add a clause on the existence of discussions if Oakhaven wants it protected.\n\n**11. Compelled disclosure (§6).** Cooperation is at the Disclosing Party's expense (good). There is no carve-out for routine regulatory examinations without notice, which may matter for regulated customers.\n\n**12. Remedies (§11).** \"May cause irreparable harm\" is fine. There is no bond waiver. Optional.\n\n**13. No residuals clause.** Oakhaven's technical staff will likely retain general knowledge of Pellucid's environment, so a residuals clause would reduce the risk of inadvertent breach.\n\n**14. Notices (§14).** Notice addresses are only city and state (\"Ann Arbor, Michigan\"), which is insufficient. Email addresses are needed, and \"confirmation of receipt\" is ambiguous.\n- *Fix:* Insert full street and email addresses and a named contact.\n\n**15. Purpose (§1(b)).** It includes \"performance\" of the services relationship. That extends this NDA to performance obligations that would be better addressed in the master services agreement, and it could cause conflicts with the MSA's confidentiality clause.\n- *Fix:* Limit it to evaluation and negotiation, and add that a definitive agreement will supersede.\n\n**16. Entire agreement (§15).** It supersedes all prior understandings. If the parties already exchanged information under another NDA or informally, that protection would be lost. Add a statement that information already disclosed is covered.\n\n**17. Drafting and execution housekeeping.**\n- The signature block has no names, titles, or dates filled in. Confirm authority.\n- Effective Date of April 6, 2026 should match actual signing, and confirm whether information was disclosed before that date (see item 16).\n- No export control, data privacy, or publicity clause. Add a no-publicity clause if useful.\n- Signature blocks should say \"a Michigan corporation\" and \"a Delaware corporation\" consistently.\n\n## Recommended must-haves before signing\n1. Delete or substantially narrow §9.\n2. Make §11 fees mutual or remove them.\n3. Add a carve-out so that no customer or personal data is exchanged under the NDA.\n4. Fix the change-of-control language in §12.\n5. Complete the notice details and signature blocks.\n\nI can prepare a redline with proposed replacement language for these provisions if useful.",
+  "seconds": 21.1,
+  "usage": {
+    "input_tokens": 2844,
+    "output_tokens": 2626,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "minor",
+      "evidence": "The NDA is styled as mutual, but several provisions tilt toward Pellucid (fees one-sided, but mutuality itself not challenged)"
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "workable, but it is broad and creates ambiguity. It does not cover the existence and terms of discussions"
+    },
+    "3": {
+      "label": "minor",
+      "evidence": "Receiving Party must \"demonstrate by written records\" every exclusion. That is stricter than usual"
+    },
+    "4": {
+      "label": "minor",
+      "evidence": "up to 5 years of obligations. That is fine for a mutual NDA, but it is a burden if Oakhaven receives more"
+    },
+    "5": {
+      "label": "minor",
+      "evidence": "It includes \"performance\" of the services relationship... Limit it to evaluation and negotiation"
+    },
+    "6": {
+      "label": "minor",
+      "evidence": "makes Oakhaven strictly liable for all of them... professional duties of confidentiality suffice"
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "no carve-out for routine regulatory examinations without notice"
+    },
+    "8": {
+      "label": "minor",
+      "evidence": "trigger lacks a request requirement... retained information obligations indefinite"
+    },
+    "9": {
+      "label": "minor",
+      "evidence": "No residuals clause... a residuals clause would reduce the risk of inadvertent breach"
+    },
+    "10": {
+      "label": "serious",
+      "evidence": "Non-solicit/no-accept clause (§9). This is the most substantive problem... effectively a non-compete"
+    },
+    "11": {
+      "label": "serious",
+      "evidence": "One-sided attorneys' fees (§11). Only Pellucid can recover fees from Oakhaven"
+    },
+    "12": {
+      "label": "serious",
+      "evidence": "Delaware exclusive venue in Wilmington (§13)... inconvenient for both and adds cost"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Consent is required for a merger or change of control. That restricts Oakhaven's M&A flexibility"
+    },
+    "14": {
+      "label": "not_flagged",
+      "evidence": ""
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3100,
+    "output_tokens": 701,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}

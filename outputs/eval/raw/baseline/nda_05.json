@@ -1,0 +1,79 @@
+{
+  "file": "nda_05.docx",
+  "company": "Sablewood Capital Advisors LLC",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "answer": "# NDA Review: Sablewood Capital Advisors LLC (Mutual NDA with Thistlecrest)\n\nThis is a reasonably balanced, mutual form. It has no fatal defects, but several provisions should be fixed. Issues are ranked by importance to Sablewood.\n\n## Higher priority\n\n**1. \"Purpose\" includes each party's own product and service development (§1.2).**\nThis is the biggest problem. Section 3 limits use to the Purpose, but the Purpose lets Thistlecrest use Sablewood's information to \"develop and improve its own products and services.\" That undercuts the use restriction. Sablewood is a financial advisor and is likely to share deal, investor, or portfolio information, which Thistlecrest could use to build or refine competing offerings. Delete the \"together with…\" clause. Also reconsider \"performance,\" because this is an evaluation NDA and performance of a services deal belongs in a separate services agreement.\n\n**2. The exclusions weaken the independent-development carve-out and burden-of-proof wording (§5).**\n- The \"written records\" requirement helps whichever party is Recipient. Sablewood will likely be the Discloser of sensitive financial information, so this is favorable, but keep it applied to all four exclusions.\n- Exclusion (a) covers information that \"becomes publicly available\" without breach, but there is no protection against public availability that results from a Representative's breach. This is covered in part (\"Recipient or its Representatives\"). Confirm the wording is retained.\n- Add a statement that information is not excluded merely because it is embraced by more general public information, or because individual elements are public while the combination is not.\n\n**3. Survival is short and the tail is unclear (§8).**\n- Obligations end three years after expiration or termination. Financial, investor, and client information may stay sensitive longer. Consider five years, or protection for as long as the information is confidential for sensitive categories.\n- The trade secret tail is good, but confidential information that is not a trade secret (such as client identities or financial data) has no tail beyond three years.\n- The term is ambiguous. The Agreement \"covers information disclosed during the two years,\" but it never says when it expires. Termination and expiration should be defined.\n- Section 7 triggers return or destruction when the Agreement \"expires.\" Clarify that expiry means the end of the two-year disclosure period.\n\n**4. Personal data and regulated information are not addressed.**\nSablewood may receive or share tenant, investor, or client personal information. The NDA has no data protection, security standard, or breach notification clause. Add a short standard-of-care clause (at least reasonable care, and no less than the Recipient uses for its own information) and prompt notice of unauthorized disclosure. The NDA currently says only \"strict confidence.\"\n\n**5. Representatives include affiliates and contractors (§4).**\n- Disclosure to affiliates' personnel and to all \"contractors\" is broad. It could include Thistlecrest's property managers or other outside vendors, who are not a natural fit for \"need to know.\"\n- The confidentiality obligations required of Representatives need not be written. Professional advisors owe duties by profession, but contractors need written terms. Require that Representatives be bound by written or professional duties.\n- Responsibility for Representatives' breaches is helpful. Keep it.\n\n## Medium priority\n\n**6. Remedies (§9).**\n- Each party bears its own fees, which removes any fee-shifting benefit even for a clear breach. Consider letting the prevailing party recover fees in enforcement actions.\n- Add a waiver of any bond requirement for injunctive relief, or at least a reasonable bond.\n- \"May cause\" irreparable harm is a softer acknowledgment than \"would cause.\" That is acceptable, but a stronger concession helps Sablewood if it is the discloser.\n\n**7. Return or destruction (§7).**\n- The backup and \"document retention policies\" carve-out is broad. A Recipient could keep everything under an internal policy. Limit it to legally required retention and routine backups that are not accessed.\n- Retained information should stay protected as long as it is retained, even past the survival period. The clause says so, but it conflicts with the three-year survival in §8. Reconcile them.\n- Certification only \"on request\" is fine. Make it an officer's certificate.\n- Add a carve-out letting Sablewood's advisors and compliance staff retain copies as required by regulation. Sablewood may be subject to recordkeeping duties, and the carve-out for \"applicable law\" in this section should cover it explicitly.\n\n**8. Compelled disclosure (§6).**\n- Cooperation is \"at the Discloser's expense.\" That is reasonable, but make sure it does not make Sablewood pay Thistlecrest's costs as a Recipient without a cap or prior approval.\n- Add an exception for routine regulatory examinations that do not target the Discloser. If Sablewood is regulated (for example, SEC or state), it will need this, and it should not have to give notice in those cases. Check Sablewood's registration status.\n\n**9. Assignment (§11.1).**\nEither party may assign to an affiliate or successor without consent, on notice only. Sablewood would have no control if Thistlecrest were acquired by a competitor, which would then hold Sablewood's information. Require consent for assignment to a competitor, or give the non-assigning party a right to terminate and demand return.\n\n**10. Definition of Confidential Information (§1.1).**\n- It is limited to \"business, technical, and financial\" information. Add personal, investor, client, tenant, property, and transaction information, plus the existence and terms of discussions.\n- Add the information a Discloser's affiliates disclose and information that the Recipient derives from it, such as notes and analyses.\n- The \"reasonable person\" standard is acceptable, but the oral-disclosure sentence is slightly confusing. Make clear that no written summary is needed.\n\n## Lower priority and drafting points\n\n**11. Missing standard provisions.**\n- No non-solicitation or non-circumvention clause. This matters if Sablewood introduces investors, owners, or properties that Thistlecrest could approach directly. Consider a limited non-circumvention clause.\n- No securities law acknowledgment. If either party could receive material non-public information about a public company, add one.\n- No privilege non-waiver clause.\n- No express DTSA whistleblower immunity notice (18 U.S.C. §1833(b)). This matters mainly for individuals, but without it exemplary damages and fees under the DTSA can be lost against individuals.\n\n**12. Governing law and venue (§11.2).**\nNew York law and New York County courts favor Sablewood. Expect Thistlecrest to push back. Add a jury waiver and consent to service by notice. The jurisdiction clause is exclusive, but injunctive relief may be needed in Florida, so permit enforcement of injunctions in any court of competent jurisdiction. Otherwise, a Florida-based breach could force Sablewood into slower relief.\n\n**13. Notices (§11.3).**\n- Notice by \"email with confirmation of receipt\" is vague. Specify email addresses.\n- The signature block provides only \"New York, New York\" and \"Tampa, Florida\" as notice addresses. Those are incomplete. Add full street and email addresses.\n\n**14. Execution blocks and parties.**\n- Signature fields for names, titles, and dates are blank. Confirm the signatories have authority.\n- Confirm the correct legal names, entity status, and good standing for both parties. Verify that Thistlecrest is a Florida corporation.\n- The preamble refers to \"offices in,\" not principal place of business. This is minor.\n\n**15. Entire agreement (§11.4).**\nIt supersedes \"all prior discussions\" on this subject matter. If information was already exchanged before May 4, 2026, it would arguably no longer be protected. Add language covering information disclosed before the Effective Date, or confirm that nothing has been shared.\n\n**16. Minor drafting and consistency.**\n- \"Discloser\" and \"Recipient\" are used in §1.1 before they are defined in §2. Reorder or cross-reference.\n- Section 11.7 has the independent-contractor clause but also holds the signature block. Separate them.\n- The severability clause could include reformation to the minimum extent necessary.\n- No express statement that disclosure is voluntary and that the Discloser keeps ownership of its information. Section 10 covers licenses only.\n- Add a clause stating that the Agreement does not restrict either party from making competing offers on property, as long as it does not use Confidential Information. This is optional and protects both sides.\n\n## Recommended next steps\n1. Strike the product-development language from §1.2 (essential).\n2. Lengthen survival and clarify the term and expiry mechanics.\n3. Tighten Representatives, retention, and assignment.\n4. Add data security, breach notice, and a non-circumvention clause if relevant.\n5. Complete the notice details and signature blocks.\n\nIf you tell me what Sablewood will actually be sharing (investor data, deal information, tenant data) and whether it is a registered adviser, I can tailor the priorities and suggest specific replacement language.",
+  "seconds": 25.0,
+  "usage": {
+    "input_tokens": 2809,
+    "output_tokens": 2994,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grades": {
+    "1": {
+      "label": "not_flagged",
+      "evidence": "This is a reasonably balanced, mutual form."
+    },
+    "2": {
+      "label": "minor",
+      "evidence": "Add personal, investor, client, tenant, property, and transaction information... oral-disclosure sentence is slightly confusing"
+    },
+    "3": {
+      "label": "serious",
+      "evidence": "The exclusions weaken the independent-development carve-out and burden-of-proof wording (§5)."
+    },
+    "4": {
+      "label": "serious",
+      "evidence": "Survival is short and the tail is unclear (§8)... Obligations end three years after expiration"
+    },
+    "5": {
+      "label": "serious",
+      "evidence": "This is the biggest problem... Purpose lets Thistlecrest use Sablewood's information to develop and improve its own products"
+    },
+    "6": {
+      "label": "serious",
+      "evidence": "Representatives include affiliates and contractors (§4)... Disclosure to affiliates' personnel and to all contractors is broad."
+    },
+    "7": {
+      "label": "minor",
+      "evidence": "Add an exception for routine regulatory examinations... make sure it does not make Sablewood pay"
+    },
+    "8": {
+      "label": "serious",
+      "evidence": "The backup and document retention policies carve-out is broad. A Recipient could keep everything"
+    },
+    "9": {
+      "label": "not_flagged",
+      "evidence": ""
+    },
+    "10": {
+      "label": "missing",
+      "evidence": "No non-solicitation or non-circumvention clause."
+    },
+    "11": {
+      "label": "minor",
+      "evidence": "Add a waiver of any bond requirement... Consider letting the prevailing party recover fees"
+    },
+    "12": {
+      "label": "minor",
+      "evidence": "New York law and New York County courts favor Sablewood... permit enforcement of injunctions in any court"
+    },
+    "13": {
+      "label": "serious",
+      "evidence": "Sablewood would have no control if Thistlecrest were acquired by a competitor"
+    },
+    "14": {
+      "label": "minor",
+      "evidence": "No express statement that disclosure is voluntary and that the Discloser keeps ownership... Section 10 covers licenses only."
+    }
+  },
+  "grade_usage": {
+    "input_tokens": 3468,
+    "output_tokens": 681,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0
+  },
+  "grade_raw": null
+}
