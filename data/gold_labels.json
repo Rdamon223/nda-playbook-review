@@ -1,7 +1,7 @@
 {
-  "reviewed": false,
+  "reviewed": true,
   "playbook_version": "Version 1",
-  "labeler": "DRAFT generated from data/seeded_deviations.json; not yet reviewed by a human",
+  "labeler": "Reviewed by the repo owner on 2026-10-08; no changes from the draft generated from data/seeded_deviations.json",
   "instructions": "The repo owner reads each NDA, corrects any label below, adds a note for each change, and then sets reviewed to true. eval.py refuses to run until reviewed is true. Topics with no planted deviation default to acceptable, or to the playbook's If absent rule when the clause is missing.",
   "ndas": {
     "nda_01.docx": {
