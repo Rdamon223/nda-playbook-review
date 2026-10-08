@@ -1,0 +1,9 @@
+{
+  "_note": "US dollars per million tokens, from https://platform.claude.com/docs/en/about-claude/pricing as checked on 2026-10-08. Update when prices change. eval.py reports cost as an estimate from this table.",
+  "claude-sonnet-5-5": {
+    "input": 2.00,
+    "output": 10.00,
+    "cache_write": 2.50,
+    "cache_read": 0.10
+  }
+}

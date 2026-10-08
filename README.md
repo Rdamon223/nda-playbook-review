@@ -10,8 +10,8 @@ Work in progress, following `nda-review-skill-spec.md` section 12.
 
 - Step 1 (done): playbook in `playbooks/mutual-nda-playbook.md`, Version 1, approved by the owner.
 - Step 2 (done): the skill (`.claude/skills/nda-review/`), schema, extraction, quote verification, memo rendering, and tests.
-- Step 3 (in review): 15 synthetic NDAs, the seeded-deviation manifest, and draft gold labels. Waiting for the owner to review the gold labels and record manual review times.
-- Next: the evaluation harness (`scripts/eval.py`) and `scripts/review.py`.
+- Step 3 (done): 15 synthetic NDAs, the seeded-deviation manifest, and gold labels reviewed by the owner.
+- Step 4 (in progress): `scripts/review.py` and `scripts/eval.py` are written and tested with a fake client. The evaluation has not been run yet.
 
 ## Layout so far
 
@@ -26,6 +26,10 @@ Work in progress, following `nda-review-skill-spec.md` section 12.
 | `scripts/finalize.py` | Validates a review JSON (schema, playbook, quotes) and writes the memo |
 | `scripts/memo.py` | Renders the one-page memo: summary table, escalations first, lawyer-review footer |
 | `scripts/playbook.py` | Parses the playbook markdown into topics |
+| `scripts/review.py` | Runs one review through the Claude API: extract, model, validate (with repair rounds), memo |
+| `scripts/eval.py` | Scores the skill and a no-playbook baseline against the gold labels; `--estimate` costs nothing |
+| `scripts/env.py` | Reads settings from the environment or a git-ignored `.env` file |
+| `config/rates.json` | Token prices used for cost estimates |
 | `scripts/make_synthetic.py` | Builds the 15 synthetic NDAs, `data/seeded_deviations.json`, draft `data/gold_labels.json`, and `data/manual_timing.csv` |
 
 Run the tests with `pip install -r requirements.txt` then `python -m pytest`.
