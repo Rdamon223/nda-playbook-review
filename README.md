@@ -6,7 +6,7 @@ A Claude skill that reviews a mutual non-disclosure agreement against a written 
 
 ## Results in brief
 
-From `REPORT.md` (15 synthetic NDAs, each reviewed 3 times, `claude-sonnet-5-5` at medium effort):
+From the full report, [REPORT.md](REPORT.md) (15 synthetic NDAs, each reviewed 3 times, `claude-sonnet-5-5` at medium effort):
 
 | | Skill (with playbook) | Same model, no playbook |
 |---|---|---|
@@ -16,7 +16,7 @@ From `REPORT.md` (15 synthetic NDAs, each reviewed 3 times, `claude-sonnet-5-5` 
 | Quotes verbatim from the NDA | 547/547 | 46/96 |
 | Time and cost per review | 15 s, about $0.04 | 23 s, about $0.05 |
 
-The sample is small and synthetic, and one person labeled it. Read `REPORT.md` for the misses and the limits before relying on these numbers.
+The sample is small and synthetic, and one person labeled it. Read [REPORT.md](REPORT.md) for the misses and the limits before relying on these numbers.
 
 ## Why it exists
 
@@ -129,9 +129,9 @@ Code, not the model, checks the output:
 
 | Path | What it is |
 |---|---|
-| `REPORT.md` | Two-page write-up: results, turnaround, every miss, limitations |
+| [`REPORT.md`](REPORT.md) | Two-page write-up: results, turnaround, every miss, limitations |
 | `outputs/results.md`, `outputs/results.json` | Full scores, confusion table, consistency, and the list of misses |
-| `outputs/sample_memo.md` | One memo, for nda_04 |
+| [`outputs/sample_memo.md`](outputs/sample_memo.md) | One memo, for nda_04 |
 | `outputs/memos/` | Run-1 memos for all 15 NDAs |
 | `outputs/eval/raw/` | Every model output from the evaluation |
 
