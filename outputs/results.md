@@ -73,11 +73,11 @@ Skill seconds cover extraction through memo, including any repair calls. Baselin
 
 | File | Manual review | Review of AI output |
 |---|---|---|
-| nda_01.docx | 2.0 |  |
-| nda_02.docx | 2.0 |  |
-| nda_03.docx | 2.0 |  |
-| nda_04.docx | 2.0 |  |
-| nda_05.docx | 2.0 |  |
+| nda_01.docx | 4.0 | 1.0 |
+| nda_02.docx | 4.0 | 1.0 |
+| nda_03.docx | 4.0 | 1.0 |
+| nda_04.docx | 4.0 | 1.0 |
+| nda_05.docx | 4.0 | 1.0 |
 
 ## Skill misses (every run)
 

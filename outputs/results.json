@@ -1617,28 +1617,28 @@
   "human": [
     {
       "file": "nda_01.docx",
-      "manual": 2.0,
-      "ai": null
+      "manual": 4.0,
+      "ai": 1.0
     },
     {
       "file": "nda_02.docx",
-      "manual": 2.0,
-      "ai": null
+      "manual": 4.0,
+      "ai": 1.0
     },
     {
       "file": "nda_03.docx",
-      "manual": 2.0,
-      "ai": null
+      "manual": 4.0,
+      "ai": 1.0
     },
     {
       "file": "nda_04.docx",
-      "manual": 2.0,
-      "ai": null
+      "manual": 4.0,
+      "ai": 1.0
     },
     {
       "file": "nda_05.docx",
-      "manual": 2.0,
-      "ai": null
+      "manual": 4.0,
+      "ai": 1.0
     },
     {
       "file": "nda_06.docx",
